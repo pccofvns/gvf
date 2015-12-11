@@ -16,7 +16,7 @@ $brand-language: #B01302;
 
   p {
     color: lighten($brand-primary, 50%);
-    max-width: 75%;
+    max-width: 100%;
     margin: 1em auto 2em;
   }
 
@@ -24,15 +24,10 @@ $brand-language: #B01302;
     margin-top: -20px;
   }
 
-  .lang-logo {
+  .gvf-logo {
     display: block;
-    background: $brand-language;
-    border-radius: 50%;
     overflow: hidden;
-    width: 100px;
-    height: 100px;
     margin: auto;
-    border: 2px solid white;
     img {
       max-width: 100%;
     }

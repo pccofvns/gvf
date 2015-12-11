@@ -1,43 +1,133 @@
 <div class="jumbotron text-center">
   <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="<%= asset_path('lang-logo.png') %>">
+    <a href="/" class="gvf-logo">
+      <img src="<%= asset_path('logo.png') %>">
     </a>
-    <h1>Getting Started with Ruby on Heroku</h1>
-    <p>This is a sample Ruby application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-ruby"><span class="glyphicon glyphicon-flash"></span> Getting Started with Ruby</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/ruby-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
+    <h1>Global Village Foundation</h1>
+    <p>This is GVF website. Here we can have our motto or something like that. Please add</p>
   </div>
 </div>
 <div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-ruby" class="alert-link">Getting Started with Ruby on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/ruby-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it grabbed all the dependencies in the <a href="https://github.com/heroku/ruby-getting-started/blob/master/Gemfile">Gemfile</a>.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-        <li>Check out the <a href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started</a> guide to learn more!</li>
-      </ul>
+  <section class="services">
+  <div class="header">
+    <div class="container-fluid">
+      <h1>our work</h1>
     </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started with Ruby on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-ruby-and-rails">Deploying Ruby Apps on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-jruby">Getting Started with Ruby on Heroku (Microsoft Windows)</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
   </div>
+  <article class="container service-entry">
+    <div class="service-title">
+      <h1 class="h4">
+        <a href="/delivery" class="service-title link-alt">Delivery</a>
+      </h1>
+    </div>
+    <div class="service-snippet">
+      <p>Delivery is at the heart of what we do. Our team of designers and developers work to transform government services by building world-class software products and raising standards of software development throughout the government. Learn more about our products by visiting our <a href='/dashboard'>dashboard</a> and you can find more information about <a href='/guides'>our standards and capabilities</a> through our guides.</p>
+      <p>Learn more about <a href='/dashboard'>what we're building and how we're doing it</a>.</p>
+    </div>
+    
+    <div class="service-title">
+      <h1 class="h4">
+        <a href="/consulting" class="service-title link-alt">Consulting</a>
+      </h1>
+    </div>
+    <div class="service-snippet">
+      <p>Our consulting team works alongside other federal agencies as partners. We’re here to roll up our sleeves right alongside you and solve the biggest challenges facing your agency. From developing agile acquisition strategies to evaluating opportunities to improving your digital initiatives, our team sets you up for success.</p>
+      <p>Learn more about the ways we can help you at <a href='/consulting/'>GVF Consulting</a>.</p>
+    </div>    
+  </article>  
+  </section>
+  <section id="news" class="blog">
+  <div class="header">
+    <div class="container-fluid">
+      <h1>blog</h1>
+    </div>
+  </div>
+  <article class="container blog-entry">    
+    <div class="blog-title">
+      <h1 class="h4" itemprop="headline">
+        <a class="link-alt blog-title" href="/2015/12/09/an-open-source-government-is-a-faster-more-efficient-government/">An open source government is a faster, more efficient government</a>
+      </h1>
+    </div>
+    <div class="blog-meta">
+      <p>Posted on <span class="blog-date"><time datetime="2015-12-09T00:00:00-05:00">09 December 2015</time></span>.</p>        
+      
+      <p class="authors">by <span class="author cm" style="color: #000"><a href="/team/cm">Prashant C Chaturvedi</a></span></p>
+      
+      <p>Tagged /<span class="blog-tags"><a href="/tags/open-source" title="click to read other posts tagged: open source">open source</a>/<a href="/tags/our-projects" title="click to read other posts tagged: our projects">our projects</a>/</span></p>
+    </div>
+    <div class="blog-snippet">
+      <p>Regulation 479 is the first Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF) regulation on the eRegulations platform. This collaboration is an excellent example of how open source development helps gvf deliver valuable services to our clients and the American public.</p>
+      
+      <p><a href="/2015/12/09/an-open-source-government-is-a-faster-more-efficient-government/">Continue reading &ldquo;An open source government is a faster, more efficient government&rdquo;...</a></p>
+    </div>    
+    
+    <div class="blog-title">
+      <h1 class="h4">
+        <a class="link-alt blog-title" href="/2015/12/08/learning-how-to-build-a-better-front-door-for-the-federal-government/">Learning how to build a better &ldquo;front door&rdquo; for the state government</a>
+      </h1>
+    </div>
+    <div class="blog-meta">
+      <p>Posted on <span class="blog-date"><time datetime="2015-12-08T14:00:00-05:00">08 December 2015</time></span>.</p>        
+      
+      <p class="authors">by <span class="author colinmacarthur" style="color: #000"><a href="/team/colinmacarthur">Colin MacArthur</a>,<span class="author carolyn" style="color: #000"><a href="/team/carolyn">Carolyn Dew</a>, and <span class="author michellechronister" style="color: #000">Michelle Chronister</span></p>
+      
+      <p>Tagged /<span class="blog-tags"><a href="/tags/our-projects" title="click to read other posts tagged: our projects">our projects</a>/<a href="/tags/user-research" title="click to read other posts tagged: user research">user research</a>/<a href="/tags/federal-front-door" title="click to read other posts tagged: federal front door">federal front door</a>/</span></p>
+    </div>
+    <div class="blog-snippet" itemprop="articleBody">
+      <p>Over the last several months, staff from General Service Administration’s USAGov and gvf teams have been talking to Americans around the country about the good, the bad, and the ugly of interacting with their federal government. The goal of the research is to gain a better understanding of how we can build a better &ldquo;front door&rdquo; to the federal government by building new digital services and enhancing existing ones.</p>
+      
+      <p><a href="/2015/12/08/learning-how-to-build-a-better-front-door-for-the-federal-government/">Continue reading &ldquo;Learning how to build a better &ldquo;front door&rdquo; for the federal government&rdquo;...</a></p>
+    </div>
+    
+    <div class="blog-title">
+      <h1 class="h4">
+        <a class="link-alt blog-title" href="/2015/12/08/using-emoji-for-knowledge-sharing/">Using emoji for knowledge sharing</a>
+      </h1>
+    </div>
+    <div class="blog-meta">
+      <p>Posted on <span class="blog-date"><time datetime="2015-12-08T10:00:00-05:00">08 December 2015</time></span>.</p>
+        
+      <p class="authors">by <span class="author melody" style="color: #000"><a href="/team/melody">Melody Kramer</a></span></p>
+      
+      <p>Tagged /<span class="blog-tags"><a href="/tags/onboarding" title="click to read other posts tagged: onboarding">onboarding</a>/<a href="/tags/how-we-work" title="click to read other posts tagged: how we work">how we work</a>/</span></p>
+    </div>
+    <div class="blog-snippet">
+      <p>Our coworkers are very, very good at documenting the things they learn in Slack, our chat program, because it’s part of their daily workflow. So I tried an experiment: I asked my gvf coworkers to tag messages that every new gvf employee should know with the :evergreen_tree: emoji.</p>
+      
+      <p><a href="/2015/12/08/using-emoji-for-knowledge-sharing/">Continue reading &ldquo;Using emoji for knowledge sharing&rdquo;...</a></p>
+    </div>
+    <div class="blog-all">
+      <a href="/news/">See all blog posts.</a>
+    </div>
+  </article>
+</section>
+<section id="newsletter" class="newsletter">
+  <div class="header">
+    <div class="container-fluid">
+      <h1>newsletter</h1>
+    </div>
+  </div>
+  <div class="container newsletter-box">
+    <div class="newsletter-form">
+      <form action="https://gsa.us9.list-manage.com/subscribe/post?u=6f1977de9eff4c384dc8d6527&amp;id=cbc418738b" method="post" id="contact-form">
+        <div class="form-group">
+          <label class="sr-hide" for="FULLNAME">Your name</label>
+          <input type="text" placeholder="Your Name" id="FULLNAME" name="FULLNAME" />
+        </div>
+        <div class="form-group">
+          <label class="sr-hide" for="EMAIL">Your email address (required)</label>
+          <input type="text" placeholder="your@email-address.com" id="EMAIL" required name="EMAIL" />
+        </div>
+        <div style="position: absolute; left: -5000px;">
+          <input type="hidden" name="b_6f1977de9eff4c384dc8d6527_cbc418738b" tabindex="-1" value="">
+        </div>
+        <input type="submit" class="button" value="Sign up to subscribe to our newsletter" />
+      </form>
+    </div>
+    <div class="newsletter-words">
+      <p>Want to know more? Leave us your name and email to receive updates about our work and news from the GVF community.</p>
+      <p class="small">Your privacy and security are important to us, we'll only share your information as described in <a href="http://www.gsa.gov/portal/content/116609">GVF's Privacy and Security Notice</a>.</p>
+    </div>
+  </div>
+</section>
 </div>
