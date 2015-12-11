@@ -17,3 +17,6 @@
 
 # Ignore ruby-version
 /.ruby-version
+
+# prevent conflicts between Spring and Git when using Guard
+/spring/*.pid
