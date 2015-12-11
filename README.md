@@ -1,16 +1,14 @@
-# ruby-getting-started
+# gvf-webapp
 
-A barebones Rails app, which can easily be deployed to Heroku.
-
-This application support the [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby) article - check it out.
+Global Village Foundation web app, which can easily be deployed to Heroku.
 
 ## Running Locally
 
 Make sure you have Ruby installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-$ git clone git@github.com:heroku/ruby-getting-started.git
-$ cd ruby-getting-started
+$ git clone git@github.com:gvfindia/gvf.git
+$ cd gvf
 $ bundle install
 $ bundle exec rake db:create db:migrate
 $ heroku local
