@@ -8,6 +8,8 @@
     <p>This is GVF website. Here we can have our motto or something like that. Please add</p>
   </div>
 </div>
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
 <div class="container">
   <section class="services">
   <div class="header">
@@ -94,8 +96,6 @@
     </div>
     <div class="blog-snippet">
       <p>Our coworkers are very, very good at documenting the things they learn in Slack, our chat program, because it’s part of their daily workflow. So I tried an experiment: I asked my gvf coworkers to tag messages that every new gvf employee should know with the :evergreen_tree: emoji.</p>
-      
-      <p><a href="/2015/12/08/using-emoji-for-knowledge-sharing/">Continue reading &ldquo;Using emoji for knowledge sharing&rdquo;...</a></p>
     </div>
     <div class="blog-all">
       <a href="/news/">See all blog posts.</a>
@@ -110,19 +110,16 @@
   </div>
   <div class="container newsletter-box">
     <div class="newsletter-form">
-      <form action="https://gsa.us9.list-manage.com/subscribe/post?u=6f1977de9eff4c384dc8d6527&amp;id=cbc418738b" method="post" id="contact-form">
+      <form action="/users/new" method="post" id="contact-form">
         <div class="form-group">
-          <label class="sr-hide" for="FULLNAME">Your name</label>
-          <input type="text" placeholder="Your Name" id="FULLNAME" name="FULLNAME" />
+          <label for="FULLNAME">Your name</label>
+          <input class="form-control" type="text" placeholder="Your Name" id="FULLNAME" name="FULLNAME" />
         </div>
         <div class="form-group">
-          <label class="sr-hide" for="EMAIL">Your email address (required)</label>
-          <input type="text" placeholder="your@email-address.com" id="EMAIL" required name="EMAIL" />
+          <label for="EMAIL">Your email address (required)</label>
+          <input class="form-control" type="text" placeholder="your@email-address.com" id="EMAIL" required name="EMAIL" />
         </div>
-        <div style="position: absolute; left: -5000px;">
-          <input type="hidden" name="b_6f1977de9eff4c384dc8d6527_cbc418738b" tabindex="-1" value="">
-        </div>
-        <input type="submit" class="button" value="Sign up to subscribe to our newsletter" />
+        <input type="submit" class="btn btn-primary " value="Sign up to subscribe to our newsletter" />
       </form>
     </div>
     <div class="newsletter-words">

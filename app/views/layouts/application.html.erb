@@ -1,38 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield(:title) %> | GVF</title>
+  <title><%= full_title(yield(:title)) %> | GVF</title>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js' %>
   <%= csrf_meta_tags %>
+ ￼<%= render 'layouts/shim'%>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-static-top navbar-inverse">
-  <div class="container">
-    <ul class="nav navbar-nav">
-      <li class="active">
-        <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
-      </li>
-      <li>
-        <a href="about"><span class="glyphicon glyphicon-user"></span> About Us</a>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-th-list"></span> Menu Options <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-          </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="navbar-right">
-        <a href="account"><span class="glyphicon glyphicon-user"></span></a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
+<%= render 'layouts/header'%>
+<div class="container">
 <%= yield %>
-
+<%= render 'layouts/footer' %> </div>
 </body>
 </html>

@@ -9,11 +9,12 @@ Rails.application.routes.draw do
   get '/about',   :to => 'pages#about'
   get '/help',   :to => 'pages#help'
   get '/faq',   :to => 'pages#faq'
-
+  
   resources :posts
   resources :users
   resources :widgets
-
+  
+  get 'signup'  => 'users#new'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

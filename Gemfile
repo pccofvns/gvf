@@ -7,6 +7,8 @@ gem 'rails', '4.2.3'
 gem 'pg', '0.17.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.3'
+#converts Less to Sass and makes all the necessary Bootstrap files available to the current application
+gem 'bootstrap-sass',       '3.2.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 2.5.3'
 # Use CoffeeScript for .js.coffee assets and views
