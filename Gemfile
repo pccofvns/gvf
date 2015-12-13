@@ -21,12 +21,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+# To make the password digest, has_secure_password uses a state-of- the-art hash function called bcrypt
+gem 'bcrypt', '3.1.7'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -48,4 +47,5 @@ group :test do
 end
 group :production do
   gem 'rails_12factor', '0.0.2'
+  gem 'puma', '2.15.3'
 end
