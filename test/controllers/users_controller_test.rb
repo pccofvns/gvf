@@ -15,14 +15,17 @@ class UsersControllerTest < ActionController::TestCase
     get :new
     assert_response :success
   end
-
+=begin
   test "should create user" do
+    existing_user = User.find_by_email!(@user.email)
+    User.delete(existing_user)
+    byebug
     assert_difference('User.count') do
-      post :create, user: { email: @user.email, name: @user.name, password_digest: User.digest('password') }
+      post :create, user: { email: @user.email, name: @user.name, password_digest: @user.password_digest }
     end
     assert_redirected_to user_path(assigns(:user))
   end
-
+=end
   test "should show user" do
     get :show, id: @user
     assert_response :success
@@ -31,13 +34,13 @@ class UsersControllerTest < ActionController::TestCase
   test "should redirect edit when not logged in" do
     get :edit, id: @user
     assert_not flash.empty?
-    assert_redirected_to login_url
+    assert_redirected_to login_path
   end
 
   test "should redirect update when not logged in" do
     patch :update, id: @user, user: { name: @user.name, email: @user.email }
     assert_not flash.empty?
-    assert_redirected_to login_url
+    assert_redirected_to login_path
   end
 
   test "should destroy user" do

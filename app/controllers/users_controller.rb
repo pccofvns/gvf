@@ -45,7 +45,8 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.update_attributes(user_params)
         flash[:success] = "Profile updated"
-        redirect_to @user
+        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit }
         format.json { render json: @user.errors, status: :unprocessable_entity }
@@ -78,7 +79,7 @@ class UsersController < ApplicationController
     # Confirms a logged-in user.
     def logged_in_user
       unless logged_in?
-  ￼￼    flash[:danger] = "Please log in."
+        flash[:danger] = "Please log in."
         redirect_to login_url
       end 
     end
