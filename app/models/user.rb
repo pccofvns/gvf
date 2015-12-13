@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   validates(:name, presence: true, length: { maximum: 50 })
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: { maximum: 255 }, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false}
-  validates :password, length: { minimum: 8 }
+  validates :password, length: { minimum: 8 }, allow_blank: true
   attr_accessor :remember_token
 
   # Returns the hash digest of the given string.
@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
   # Returns a random token.
   def User.new_token
     SecureRandom.urlsafe_base64
- end
+  end
 
   # Remembers a user in the database for use in persistent sessions.
   def remember
