@@ -15,5 +15,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
       post_via_redirect users_path, user: { name:  "Prashant C Chaturvedi", email: "pccuser@valid.com",password:"foobarfoobar", password_confirmation: "foobarfoobar" }
     end
     assert_template 'users/show'
+    assert is_logged_in?
   end
+
 end

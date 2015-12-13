@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   def about
   end
   
-  def about
+  def people
   end
 
   def help
