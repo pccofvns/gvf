@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20151213092347) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "posts", force: :cascade do |t|
     t.string   "content"
     t.integer  "user_id"
@@ -32,7 +29,7 @@ ActiveRecord::Schema.define(version: 20151213092347) do
     t.string   "remember_digest"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
 
   create_table "widgets", force: :cascade do |t|
     t.string   "name"

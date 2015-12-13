@@ -3,8 +3,6 @@ ruby '2.2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
-# Use postgresql as the database for Active Record
-gem 'pg', '0.17.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.3'
 #converts Less to Sass and makes all the necessary Bootstrap files available to the current application
@@ -47,6 +45,8 @@ group :test do
   gem 'guard-minitest', '2.3.1'
 end
 group :production do
+  # Use postgresql as the database for Active Record
+  gem 'pg', '0.17.1'
   gem 'rails_12factor', '0.0.2'
   gem 'puma', '2.15.3'
 end

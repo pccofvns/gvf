@@ -15,7 +15,6 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
@@ -23,13 +22,14 @@ default: &default
 
 development:
   <<: *default
-  database: ruby-getting-started_development
+  adapter: sqlite3
+  database: gvf_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: ruby-getting-started
+  #username: gvf
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: ruby-getting-started_test
+  adapter: sqlite3
+  database: gvf_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: ruby-getting-started_production
-  username: ruby-getting-started
-  password: <%= ENV['RUBY-GETTING-STARTED_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  database: gvf_production
+  username: gvf
+  password: <%= ENV['gvf'] %>
