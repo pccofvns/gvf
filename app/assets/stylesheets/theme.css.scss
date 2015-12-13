@@ -142,36 +142,48 @@ aside {
       letter-spacing: -1px;
       margin-bottom: 3px;
       margin-top: 0px;
-      } }
-    }
-    .gravatar {
-      float: left;
-      margin-right: 10px;
-    }
-    .gravatar_edit {
-      margin-top: 15px;
-    }
-    /* footer */
-    footer {
-      margin-top: 45px;
-      padding-top: 5px;
-      border-top: 1px solid #eaeaea;
-      color: #777;
-    }
-    footer a {
-      color: #555;
-    }
-    footer a:hover {
-      color: #222;
-    }
-    footer small {
-      float: left;
-    }
-    footer ul {
-      float: right;
-      list-style: none;
-    }
-    footer ul li {
-      float: left;
-      margin-left: 15px;
-    }
+    } 
+  }
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+.gravatar_edit {
+  margin-top: 15px;
+}
+/* footer */
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+footer a {
+  color: #555;
+}
+footer a:hover {
+  color: #222;
+}
+footer small {
+  float: left;
+}
+footer ul {
+  float: right;
+  list-style: none;
+}
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  } 
+}
