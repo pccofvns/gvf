@@ -20,3 +20,7 @@
 
 # prevent conflicts between Spring and Git when using Guard
 /spring/*.pid
+
+gvf_development
+
+gvf_test
