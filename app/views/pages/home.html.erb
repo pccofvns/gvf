@@ -8,7 +8,9 @@
     <p>This is GVF website. Here we can have our motto or something like that. Please add</p>
   </div>
 </div>
+<% if !logged_in? %>
   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+<% end %>
 </div>
 <div class="container">
   <section class="services">
