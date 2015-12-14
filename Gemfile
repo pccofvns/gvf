@@ -23,6 +23,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'bcrypt', '3.1.7'
 gem 'will_paginate', '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
+gem "font-awesome-rails"
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 # Use ActiveModel has_secure_password
 

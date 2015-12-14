@@ -1,9 +1,28 @@
-<footer class="footer">
-	<nav>
-		<ul>
-			<li><%= link_to "About", '#' %></li>
-			<li><%= link_to "Contact", '#' %></li>
-			<li><a href="/news">News</a></li>
-		</ul> 
-	</nav>
+<!-- The content of your page would go here. -->
+
+<footer class="footer-distributed">
+
+	<div class="footer-right">
+
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-linkedin"></i></a>
+
+	</div>
+
+	<div class="footer-left">
+
+		<p class="footer-links">
+			<%= link_to "Home", root_path %>
+			·
+			<%= link_to "Blog", blog_path %>
+			·
+			<%= link_to "About", about_path %>
+			·
+			<%= link_to "Contact", contact_path %>
+		</p>
+
+		<p>Global Village Foundation &copy; 2016</p>
+	</div>
+
 </footer>

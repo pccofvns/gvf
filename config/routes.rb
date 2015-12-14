@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'people',   :to => 'pages#people'
   get 'blog',   :to => 'pages#blog'
   get 'privacy',   :to => 'pages#privacy'
+  get 'about',   :to => 'pages#about'
+  get 'contact',   :to => 'pages#contact'
   get 'login'   => 'sessions#new'
   post 'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
