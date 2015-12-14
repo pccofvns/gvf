@@ -19,25 +19,26 @@
       <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
           <li><%= link_to "Users", users_path %></li>
+          <li>
+            <%= link_to current_user do %>
+                <i class="fa fa-user fa-fw"></i>&nbsp;<%=@current_user.name%></i>
+            <% end %>
+          </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li>
-              <%= link_to current_user do %>
-                  <i class="fa fa-user fa-fw"></i>&nbsp;<%=@current_user.name%></i>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to edit_user_path(current_user) do %>
-                  <i class="fa fa-pencil fa-fw"></i>&nbsp;Settings</i>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to logout_path, method: "delete" do %>
-                  <i class="fa fa-sign-out fa-fw"></i>&nbsp;Log out</i>
-              <% end %>
-            </li>
-          </ul>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><span class="caret"></span></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <%= link_to edit_user_path(current_user) do %>
+                    <i class="fa fa-cog fa-fw"></i>&nbsp;Settings</i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to logout_path, method: "delete" do %>
+                    <i class="fa fa-sign-out fa-fw"></i>&nbsp;Log out</i>
+                <% end %>
+              </li>
+            </ul>
+          </li>  
         <% else %>
             <li><%= link_to "Log in", login_path %></li>
         <% end %>
