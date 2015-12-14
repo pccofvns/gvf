@@ -1,14 +1,19 @@
 class PagesController < ApplicationController
+
+  def home
+  	@newsletter = Newsletter.new
+  end
   
-  def about
+  def work
   end
   
   def people
   end
 
-  def help
+  def blog
   end
 
-  def faq
+  def privacy
   end
+
 end

@@ -104,30 +104,5 @@
     </div>
   </article>
 </section>
-<section id="newsletter" class="newsletter">
-  <div class="header">
-    <div class="container-fluid">
-      <h1>newsletter</h1>
-    </div>
-  </div>
-  <div class="container newsletter-box">
-    <div class="newsletter-form">
-      <form action="/users/new" method="post" id="contact-form">
-        <div class="form-group">
-          <label for="FULLNAME">Your name</label>
-          <input class="form-control" type="text" placeholder="Your Name" id="FULLNAME" name="FULLNAME" />
-        </div>
-        <div class="form-group">
-          <label for="EMAIL">Your email address (required)</label>
-          <input class="form-control" type="text" placeholder="your@email-address.com" id="EMAIL" required name="EMAIL" />
-        </div>
-        <input type="submit" class="btn btn-primary " value="Sign up to subscribe to our newsletter" />
-      </form>
-    </div>
-    <div class="newsletter-words">
-      <p>Want to know more? Leave us your name and email to receive updates about our work and news from the GVF community.</p>
-      <p class="small">Your privacy and security are important to us, we'll only share your information as described in <a href="http://www.gsa.gov/portal/content/116609">GVF's Privacy and Security Notice</a>.</p>
-    </div>
-  </div>
-</section>
+<%=render 'newsletters/form'%>
 </div>

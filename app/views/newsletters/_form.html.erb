@@ -1,0 +1,31 @@
+<section id="newsletter">
+  <div class="header">
+    <div class="container-fluid">
+      <h1>newsletter</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= form_for(@newsletter, remote: true, format: :json, html: {class: :newsletter_form}) do |f| %>
+      <div id="error_explanation" style='display:none;'>
+        <ul>
+          <% if @newsletter.errors.any? %>
+            <% @newsletter.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+      <%= f.submit "Sign up to subscribe to our newsletter", class: "btn btn-primary" %> 
+      <% end %>
+      <div>
+        <p>Want to know more? Leave us your name and email to receive updates about our work and news from the GVF community.</p>
+        <p class="small">Your privacy and security are important to us, we'll only share your information as described in <%= link_to "GVF's Privacy and Security Notice", privacy_path(:anchor => "newsletter")%>.</p>
+      </div>
+    </div>
+  </div>
+</section>

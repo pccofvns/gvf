@@ -5,9 +5,15 @@
         <li class="active">
           <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
         </li>
-        <li><%= link_to "About us", about_path %></li>
+        <li><%= link_to "Work", work_path %></li>
         <li>
-          <li><%= link_to "Help", help_path%></li>
+          <li><%= link_to "People", people_path%></li>
+        </li>
+        <li>
+          <li><%= link_to "Blog", blog_path%></li>
+        </li>
+        <li>
+          <li><%= link_to "Newsletter", root_path(:anchor => "newsletter")%></li>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

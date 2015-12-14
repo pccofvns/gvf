@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
 
+  resources :newsletters
  # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
 
   root 'pages#home'
-  get 'about',   :to => 'pages#about'
-  get 'help',   :to => 'pages#help'
-  get 'faq',   :to => 'pages#faq'
+  get 'work',   :to => 'pages#work'
+  get 'people',   :to => 'pages#people'
+  get 'blog',   :to => 'pages#blog'
+  get 'privacy',   :to => 'pages#privacy'
   get 'login'   => 'sessions#new'
   post 'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
