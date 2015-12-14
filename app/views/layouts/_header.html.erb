@@ -13,7 +13,7 @@
           <li><%= link_to "Blog", blog_path%></li>
         </li>
         <li>
-          <li><%= link_to "Newsletter", root_path(:anchor => "newsletter")%></li>
+          <li><%= link_to "News & Events", events_path%></li>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -40,7 +40,12 @@
             </ul>
           </li>  
         <% else %>
-            <li><%= link_to "Log in", login_path %></li>
+            <li><%= link_to "Register", signup_path %></li>
+            <li>
+              <%= link_to login_path do%>
+                <i class="fa fa-sign-in fa-fw"></i>&nbsp;Log in</i>
+              <%end%>
+            </li>
         <% end %>
       </ul>
     </div>

@@ -8,7 +8,7 @@ $(document).ready ->
     $newsletter_form = $(event.data)
     $error_container = $("#error_explanation", $newsletter_form)
     $error_container_ul = $("ul", $error_container)
-    $("<p class='alert alert-success' id='newsletter-received'>").html("Newsletter request received for "+xhr.responseJSON.email).appendTo $newsletter_form
+    $("<p class='alert alert-success' id='newsletter-received'>").html("Subscribed for "+xhr.responseJSON.email).appendTo $newsletter_form
     setTimeout (->
       $('p.alert-success').fadeOut 'slow', ->
         $('p.alert-success').remove()

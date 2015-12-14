@@ -1,28 +1,43 @@
 <!-- The content of your page would go here. -->
 
 <footer class="footer-distributed">
+	<div class="row">
+		<div class="col-md-4">
+			<div>
+				<p class="footer-links">
+					<%= link_to "Home", root_path %>
+					·
+					<%= link_to "Blog", blog_path %>
+					·
+					<%= link_to "About", about_path %>
+					·
+					<%= link_to "Contact", contact_path %>
+				</p>
+				<p>Global Village Foundation &copy; 2016</p>
+			</div>
+		</div>
+		
+		<div class="col-md-4 newsletter">
+			<div style="width:80%">
+				<%= form_for(Newsletter.new, remote: true, format: :json, html: {class: :newsletter_form}) do |f| %>
+				<%= f.label :name %>
+				<%= f.text_field :name, class: 'form-control' %>
+				<%= f.label :email %>
+				<%= f.email_field :email, class: 'form-control' %>
+				<%= f.submit "Sign up to subscribe to our newsletter", class: "btn btn-primary" %> 
+				<% end %>
+				<div>
+					<p class="small">Your privacy and security are important to us, we'll only share your information as described in <%= link_to "GVF's Privacy and Security Notice", privacy_path(:anchor => "newsletter")%>.</p>
+				</div>
+			</div>
+		</div>	
 
-	<div class="footer-right">
-
-		<a href="#"><i class="fa fa-facebook"></i></a>
-		<a href="#"><i class="fa fa-twitter"></i></a>
-		<a href="#"><i class="fa fa-linkedin"></i></a>
-
+		<div class="col-md-4 social-links">
+			<div>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+			</div>
+		</div>
 	</div>
-
-	<div class="footer-left">
-
-		<p class="footer-links">
-			<%= link_to "Home", root_path %>
-			·
-			<%= link_to "Blog", blog_path %>
-			·
-			<%= link_to "About", about_path %>
-			·
-			<%= link_to "Contact", contact_path %>
-		</p>
-
-		<p>Global Village Foundation &copy; 2016</p>
-	</div>
-
 </footer>

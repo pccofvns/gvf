@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
 
   def home
-  	@newsletter = Newsletter.new
   end
   
   def work
@@ -11,6 +10,9 @@ class PagesController < ApplicationController
   end
 
   def blog
+  end
+
+  def events
   end
 
   def privacy

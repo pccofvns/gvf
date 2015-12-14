@@ -58,7 +58,7 @@ $gray-medium-light: #eaeaea;
 
   }
   .gvf-logo:hover {
-    color: #fff;
+    color: #ffff;
     text-decoration: none;
   }
 }
@@ -71,9 +71,11 @@ textarea {
 .center {
   text-align: center;
 }
+
 p{
   font-size: 1.1em; line-height: 1.7em;
 }
+
 /* forms */
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
@@ -149,53 +151,39 @@ aside {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: normal 16px sans-serif;
-
+  font: normal 14px sans-serif;
   padding: 45px 50px;
   margin-top: 80px;
-}
-
-.footer-distributed .footer-left p{
-  color:  #8f9296;
-  font-size: 14px;
-  margin: 0;
+  color:  #ffffff;
 }
 
 /* Footer links */
 
 .footer-distributed p.footer-links{
-  font-size:18px;
-  font-weight: bold;
-  color:  #ffffff;
   margin: 0 0 10px;
   padding: 0;
 }
 
 .footer-distributed p.footer-links a{
+  font-weight: bold;
+  font-size:18px;
   display:inline-block;
   line-height: 1.8;
   text-decoration: none;
   color:  inherit;
 }
 
-.footer-distributed .footer-right{
-  float: right;
-  margin-top: 6px;
-  max-width: 180px;
-}
-
-.footer-distributed .footer-right a{
+.footer-distributed .social-links a{
+  float:right;
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   background-color:  #33383b;
   border-radius: 2px;
-
-  font-size: 20px;
+  font-size: 25px;
   color: #ffffff;
   text-align: center;
-  line-height: 35px;
-
+  line-height: 45px;
   margin-left: 3px;
 }
 
