@@ -12,6 +12,31 @@ $gray-medium-light: #eaeaea;
   -webkit-box-sizing: border-box;
   ￼￼box-sizing:border-box;
 }
+html {
+    font-family: "Raleway";
+}
+body {
+  background-color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    padding-top: 50px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
 .debug_dump {
   clear: both;
   float: left;
@@ -48,15 +73,39 @@ $gray-medium-light: #eaeaea;
 section {
   overflow: auto;
 }
-
+.centered {
+    text-align: center;
+}
 .center {
   text-align: center;
 }
+/* Links */
+a {
+    /*color: #3bc492;*/
+    word-wrap: break-word;
 
-p{
-  font-size: 1.1em; line-height: 1.7em;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
+a:hover,
+a:focus {
+    color: #c0392b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
 /* forms */
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
@@ -132,7 +181,7 @@ aside {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: normal 14px sans-serif;
+  font: 20px;
   padding: 45px 50px;
   margin-top: 80px;
   color:  #ffffff;
@@ -146,8 +195,7 @@ aside {
 }
 
 .footer-distributed p.footer-links a{
-  font-weight: bold;
-  font-size:18px;
+  font-size:24px;
   display:inline-block;
   line-height: 1.8;
   text-decoration: none;
@@ -155,7 +203,7 @@ aside {
 }
 
 .footer-distributed .social-links a{
-  float:right;
+  float:center;
   display: inline-block;
   width: 45px;
   height: 45px;
@@ -165,7 +213,7 @@ aside {
   color: #ffffff;
   text-align: center;
   line-height: 45px;
-  margin-left: 3px;
+  margin-left: 30px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
