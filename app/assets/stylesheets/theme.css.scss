@@ -45,14 +45,12 @@ p {
   @include box_sizing;
 }
 .jumbotron {
-  background: $brand-primary;
+  background: url('https://c2.staticflickr.com/6/5499/9488406593_85006df263_b.jpg') no-repeat center center !important;
   color: white;
   padding-bottom: 80px;
 
   p {
     color: lighten($brand-primary, 50%);
-    max-width: 100%;
-    margin: 1em auto 2em;
   }
 
   .gvf-logo {
