@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>BLOG_NAME</title>
+ <link href="YOUR_URL/atom.xml" rel="self"/>
+ <link href="YOUR_URL"/>
+ <updated>2015-12-16T19:04:41+05:30</updated>
+ <id>BLOG_URL</id>
+ <author>
+   <name>BLOG_NAME</name>
+ </author>
+
+ 
+ <entry>
+   <title>Skill Development Initiatives in India</title>
+   <link href="YOUR_URL/skill-development-initiatives-in-india.html"/>
+   <updated>2015-12-16T00:00:00+05:30</updated>
+   <id>BLOG_URL/skill-development-initiatives-in-india</id>
+   <content type="html">&lt;p&gt;With so much focus on skill development in India, largely the programs have been a failure in the past. After ITI or diploma, you&amp;#39;ll get a job 10k while an Uber driver is comfortably earning 50k a month.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Skill Development as CSR - A win win for all</title>
+   <link href="YOUR_URL/skill-development-as-c-s-r-a-win-win.html"/>
+   <updated>2015-12-16T00:00:00+05:30</updated>
+   <id>BLOG_URL/skill-development-as-c-s-r-a-win-win</id>
+   <content type="html">&lt;p&gt;With so much focus on skill development in India, largely the programs have been a failure in the past. After ITI or diploma, you&amp;#39;ll get a job 10k while an Uber driver is comfortably earning 50k a month.&lt;/p&gt;
+
+&lt;h2&gt;Some more&lt;/h2&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>CSR - Is there a better way?</title>
+   <link href="YOUR_URL/c-s-r-in-organizations.html"/>
+   <updated>2015-12-16T00:00:00+05:30</updated>
+   <id>BLOG_URL/c-s-r-in-organizations</id>
+   <content type="html">&lt;h3&gt;What is CSR.&lt;/h3&gt;
+
+&lt;p&gt;CSR abbreviation for &lt;a href=&quot;http://en.wikipedia.org/wiki/Corporate_social_responsibility&quot;&gt;Corporate Social Responsibility&lt;/a&gt; is a form of corporate self regulation integrated into a business model. As per the campanies law, the corporates and business organizations in India, are obliged to spend some percentage of their earnings towards society.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h3&gt;How most organizations work&lt;/h3&gt;
+
+&lt;p&gt;To work towards the societal cause, the organizations, mostly have special community of people or group of volunteers, who actively participate in the such planned activities. I have been part of such cause oriented groups in the IT organizations I&amp;#39;ve worked with in the past. Having worked as a volunteer and organizer, I have developed an opinion about this whole CSR thing. I believe that with better management we can make efforts to execute this whole thing more efficently.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h3&gt;Scope of CSR activities&lt;/h3&gt;
+
+&lt;p&gt;I belive that, the work which the organizations decide to take up as their CSR are limited in the scope. I think that this is because when we think of CSR, we think of charity. When we think of charity, we think of benefitting somebody directly by giving them clothes, money and education. In the process, we seek a kind of psychological satisfaction by taking active part in it. For example as an individual, I would be more happy if I could distribute clothes by myself to the people begging on footpath than giving it to someone who on my behalf distributes it to those who he thinks are in need. Even if we trust them. We want them to see the good in us, say thank you and be obliged. We also want to be noticed. &lt;/p&gt;
+
+&lt;p&gt;Not going in too much of pscychoanalysis, I think that there is more that we can do as an organization instead of just organizing clothes donation drive, funding a child education, blood/organ donation drive and so on. Organizing such activities inside premises are sure good, but it is the employee who is doing it actually. So as an organization, this is not enough of CSR. It is good that we as an organization are acting as an platform for such activities so that employees doesn&amp;#39;t have to go to the NGO&amp;#39;s who are actually providing the services for common.&lt;/p&gt;
+
+&lt;h4&gt;Can we broaden the scope?&lt;/h4&gt;
+
+&lt;hr&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

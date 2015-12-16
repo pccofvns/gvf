@@ -1,0 +1,11 @@
+markdown: redcarpet
+permalink: /:title.html
+destination: ../../public/blog
+auto: true
+excerpt_separator: "\n\n"
+paginate: 3
+paginate_path: "/blog/page:num/"
+exclude:
+  - Rakefile
+  - Gemfile
+  - .gitignore

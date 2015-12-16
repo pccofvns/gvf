@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<h1>{{ post.title }}</h1>
+<p class="lead">by &nbsp;<span>{{page.author}}</span>
+</p>
+<hr>
+<p><span class="glyphicon glyphicon-time"></span> Posted on <span>{{ page.date | date_to_string }}</span></p>
+<hr>
+<!-- Preview Image -->
+{% if page.img %}
+<img class="img-responsive" src="{{site.baseurl}}/images/{{page.img}}" alt="{{page.title}}" />
+<hr>
+{% endif %}
+<div id="post">
+{{content}}
+</div>
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    {% for post in site.related_posts limit:3 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/blog{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

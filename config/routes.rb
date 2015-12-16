@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :newsletters
  # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -9,7 +8,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'work',   :to => 'pages#work'
   get 'people',   :to => 'pages#people'
-  get 'blog',   :to => 'pages#blog'
+  get 'blogg',   :to => 'pages#blogg'
   get 'events',   :to => 'pages#events'
   get 'privacy',   :to => 'pages#privacy'
   get 'about',   :to => 'pages#about'
@@ -22,6 +21,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :users
   resources :sessions
+  resources :newsletters
   
   
   # Example of regular route:

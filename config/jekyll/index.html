@@ -1,0 +1,33 @@
+---
+layout: default
+title: Blog@GVF
+---
+
+<div id="home">
+  
+    {% for post in site.posts %}
+    <div class="row">
+      <div class="col-md-12">
+      	<h2 style="align:left"><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
+      	<p>
+      		<article>
+          {{ post.excerpt }}
+          {% capture content_words %} 
+            {{ post.content | number_of_words }} 
+          {% endcapture %} 
+          {% capture excerpt_words %} 
+            {{ post.excerpt | number_of_words }} 
+          {% endcapture %} 
+          {% if excerpt_words != content_words %}
+          <div style="float:right"><a class="btn btn-sm btn-primary" href="blog/{{ post.url }}/#read-more" role="button">Read more <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+          {% endif %}
+          </article>
+        </p>
+      	<div style="float:right" class="col-md-4"><span>By&nbsp;<strong>{{post.author}}</strong>&nbsp;</span><span>on&nbsp;<strong>{{ post.date | date_to_string }}</strong></span></div>
+      </div>
+    </div>
+    <hr>
+    {% endfor %}
+  
+</div>
