@@ -2,13 +2,17 @@
 layout: post
 published: true
 title: CSR - Is there a better way?
-author: 
-- Prashant C Chaturvedi
+author: Prashant C Chaturvedi
+comments: true
 img: 900x300.png
 excerpt_separator: "\n\n"
+tags:
+- CSR
+- coprporate
+- IT
 ---
 
-###What is CSR.
+###What is CSR?.
 CSR abbreviation for [Corporate Social Responsibility](http://en.wikipedia.org/wiki/Corporate_social_responsibility) is a form of corporate self regulation integrated into a business model. As per the campanies law, the corporates and business organizations in India, are obliged to spend some percentage of their earnings towards society.
 
 
@@ -26,3 +30,4 @@ Not going in too much of pscychoanalysis, I think that there is more that we can
 
 ####Can we broaden the scope?
 ------
+

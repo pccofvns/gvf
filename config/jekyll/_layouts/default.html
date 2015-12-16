@@ -38,6 +38,10 @@
           <li><a href="people">People</a></li>
           <li class="active"><a href="/blog">Blog</a></li>
           <li><a href="events">News & Events</a></li>
+          {% for page in site.pages_list %}
+            &nbsp;&nbsp;&nbsp;
+            <li><a href="{{ page[1]  }}">{{ page[0] }}</a></li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -59,5 +63,6 @@
 
 <!-- Google Analytics end -->
 </div>
+{% include comments.html %}
 </body>
 </html>

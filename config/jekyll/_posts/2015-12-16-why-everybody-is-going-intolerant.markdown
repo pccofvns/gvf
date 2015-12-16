@@ -4,7 +4,11 @@ published: true
 title: Why everybody is growing intolerant?
 img: 900x300.png
 author: Prashant C Chaturvedi
+comments: true
 excerpt_separator: "\n\n"
+tags:
+- intolerance
+- religion
 ---
 
 We all have been coming off as intolerant these days. What has changed so sudden? Are we really intolerant?

@@ -21,11 +21,19 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 # To make the password digest, has_secure_password uses a state-of- the-art hash function called bcrypt
 gem 'bcrypt', '3.1.7'
+# for pagination of any collection of entities
 gem 'kaminari'
+# for adding font-awesome icons
 gem "font-awesome-rails"
+# library to generate static pages from markdown
 gem 'jekyll', '~>3.0.1'
+# markdown processor for jekyll
 gem 'redcarpet', '3.3.3'
+# to enable pagination on blog index page
 gem 'jekyll-paginate'
+# Classifier is a general module to allow Bayesian and other types of classifications.
+# Classifier Reborn is a fork of cardmagic/classifier under more active development.
+gem 'classifier-reborn'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 # Use ActiveModel has_secure_password

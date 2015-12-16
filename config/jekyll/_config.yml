@@ -4,9 +4,18 @@ destination: ../../public/blog
 auto: true
 excerpt_separator: "\n\n"
 paginate: 3
-paginate_path: "/blog/page/:num"
-gems: [jekyll-paginate]
+paginate_path: "/page/:num"
+gems: [jekyll-paginate, classifier-reborn]
+keep_files: [.git]
+lsi: true
+encoding: UTF-8
+permalink: pretty
+url: gvfindia.org/blog
+title: Blog@GVF
 exclude:
   - Rakefile
   - Gemfile
   - .gitignore
+pages_list:       
+  Archive: '/blog/archive'
+  Feed: '/blog/atom.xml'
