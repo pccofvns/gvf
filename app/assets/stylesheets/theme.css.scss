@@ -20,7 +20,7 @@ body {
   font-family: "Lato";
   font-weight: 300;
   font-size: 18px;
-  color: #555;
+  color: #606c71;
   padding-top: 50px;
 
   -webkit-font-smoothing: antialiased;
@@ -30,7 +30,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
-    color: #333;
+    color: #159957;
 }
 /* Paragraph & Typographic */
 p {
@@ -79,9 +79,7 @@ section {
 }
 /* Links */
 a {
-    /*color: #3bc492;*/
     word-wrap: break-word;
-
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -91,7 +89,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #c0392b;
+    color: #159957;
     text-decoration: none;
     outline: 0;
 }
@@ -137,32 +135,6 @@ color: red;
   @extend .has-error;
   .form-control {
     color: $state-danger-text;
-  }
-}
-/* sidebar */
-aside {
-  section.user_info {
-    margin-top: 20px;
-  }
-  section {
-    padding: 10px 0;
-    margin-top: 20px;
-    &:first-child {
-      border: 0;
-      padding-top: 0;
-    }
-    span {
-      display: block;
-      margin-bottom: 3px;
-      line-height: 1;
-    }
-    h1 {
-      font-size: 1.4em;
-      text-align: left;
-      letter-spacing: -1px;
-      margin-bottom: 3px;
-      margin-top: 0px;
-    } 
   }
 }
 .gravatar {
