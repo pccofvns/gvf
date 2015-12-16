@@ -5,6 +5,7 @@ auto: true
 excerpt_separator: "\n\n"
 paginate: 3
 paginate_path: "/blog/page:num/"
+gems: [jekyll-paginate]
 exclude:
   - Rakefile
   - Gemfile

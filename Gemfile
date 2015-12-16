@@ -25,6 +25,7 @@ gem 'kaminari'
 gem "font-awesome-rails"
 gem 'jekyll', '~>3.0.1'
 gem 'redcarpet', '3.3.3'
+gem 'jekyll-paginate'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 # Use ActiveModel has_secure_password

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'work',   :to => 'pages#work'
   get 'people',   :to => 'pages#people'
   get 'blogg',   :to => 'pages#blogg'
+  get 'blog',   :to => 'blog'
   get 'events',   :to => 'pages#events'
   get 'privacy',   :to => 'pages#privacy'
   get 'about',   :to => 'pages#about'

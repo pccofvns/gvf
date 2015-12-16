@@ -4,12 +4,23 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2015-12-16T19:04:41+05:30</updated>
+ <updated>2015-12-16T20:33:43+05:30</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
  </author>
 
+ 
+ <entry>
+   <title>Why everybody is going intolerant?</title>
+   <link href="YOUR_URL/why-everybody-is-going-intolerant.html"/>
+   <updated>2015-12-16T00:00:00+05:30</updated>
+   <id>BLOG_URL/why-everybody-is-going-intolerant</id>
+   <content type="html">&lt;p&gt;We all have been coming off as intolerant these days. What has changed so sudden? Are we really intolerant?&lt;/p&gt;
+
+&lt;p&gt;We&amp;#39;ll try to find answers to these questions today.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Skill Development Initiatives in India</title>
