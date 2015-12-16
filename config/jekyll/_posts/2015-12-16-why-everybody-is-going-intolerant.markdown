@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Why everybody is going intolerant?
+title: Why everybody is growing intolerant?
 img: 900x300.png
 author: Prashant C Chaturvedi
 excerpt_separator: "\n\n"
