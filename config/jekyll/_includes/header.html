@@ -1,0 +1,29 @@
+<header class="navbar navbar-default navbar-fixed-top">
+  <nav>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><b>Global Village Foundation</b></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="<%= active_class(root_path) %>">
+            <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+          </li>
+          <li><a href="/work">Work</a></li>
+          <li><a href="/people">People</a></li>
+          <li class="active"><a href="/blog">Blog</a></li>
+          <li><a href="/events">News & Events</a></li>
+          {% for page in site.pages_list %}
+            &nbsp;&nbsp;&nbsp;
+            <li><a href="{{ page[1]  }}">{{ page[0] }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

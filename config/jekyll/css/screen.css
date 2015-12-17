@@ -42,19 +42,19 @@ p {
 /*
 /*****************************************************************************/
 
-.site {
-  font-size: 110%;
-  text-align: justify;
-  width: 40em;
-  margin: 3em auto 2em auto;
-  line-height: 1.5em;
-}
+  .site {
+    font-size: 110%;
+    text-align: justify;
+    width: 40em;
+    margin: 3em auto 2em auto;
+    line-height: 1.5em;
+  }
 
-.title {
-  color: #a00;
-  font-weight: bold;
-  margin-bottom: 2em;
-}
+  .title {
+    color: #a00;
+    font-weight: bold;
+    margin-bottom: 2em;
+  }
 
   .site .title a {
     color: #a00;
@@ -87,25 +87,29 @@ p {
     overflow: hidden;
   }
 
-    .site .footer .contact {
-      float: left;
-      margin-right: 3em;
+  .site .footer .contact {
+    float: left;
+    margin-right: 3em;
+  }
+
+    .site .footer .contact a {
+      color: #8085C1;
     }
 
-      .site .footer .contact a {
-        color: #8085C1;
-      }
+  .site .footer .rss {
+    margin-top: 1.1em;
+    margin-right: -.2em;
+    float: right;
+  }
 
-    .site .footer .rss {
-      margin-top: 1.1em;
-      margin-right: -.2em;
-      float: right;
-    }
+  .site .footer .rss img {
+    border: 0;
+  }
 
-      .site .footer .rss img {
-        border: 0;
-      }
-
+  .site-tag a {
+    display: inline-block;
+    margin-right: 12px;
+  }
 /*****************************************************************************/
 /*
 /* Posts

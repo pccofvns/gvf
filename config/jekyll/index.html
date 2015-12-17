@@ -4,55 +4,108 @@ title: Blog@GVF
 ---
 
 <div id="home">
-  
-    {% for post in paginator.posts %}
-    <div class="row">
-      <div class="col-md-12">
-      	<h2 style="align:left"><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
-      	<p>
-      		<article>
-          {{ post.excerpt | strip_newlines }}
-          {% capture content_words %} 
+  <div class="row">
+    <div class="col-md-8">
+
+      {% for post in paginator.posts %}
+      <div class="row">
+        <div class="col-md-12">
+         <h2 style="align:left"><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>
+         <p>
+          <article>
+            {{ post.excerpt | strip_newlines }}
+            {% capture content_words %} 
             {{ post.content | number_of_words }} 
-          {% endcapture %} 
-          {% capture excerpt_words %} 
+            {% endcapture %} 
+            {% capture excerpt_words %} 
             {{ post.excerpt | number_of_words }} 
-          {% endcapture %} 
-          {% if excerpt_words != content_words %}
-          <span style="float:left;display:inline"><a class="btn" href="blog/{{ post.url }}/#read-more">more..</a></span>
-          {% endif %}
+            {% endcapture %} 
+            {% if excerpt_words != content_words %}
+            <span style="float:left;display:inline"><a class="btn" href="blog/{{ post.url }}/#read-more">more..</a></span>
+            {% endif %}
           </article>
-          <div style="float:right" class="col-md-4"><span>By&nbsp;<strong>{{post.author}}</strong>&nbsp;</span><span>on&nbsp;<strong>{{ post.date | date_to_string }}</strong></span></div>
+          </p>
+        </div>
       </div>
-        </p>
-      	
-    </div>
-    <hr>
-    {% endfor %}
-    {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: '/blog' |prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-      {% else %}
-        <span>&laquo; Prev</span>
-      {% endif %}
-
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <em>{{ page }}</em>
-        {% elsif page == 1 %}
-          <a href="{{ paginator.previous_page_path | prepend: '/blog' |prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-        {% else %}
-          <a href="{{ site.paginate_path | prepend: '/blog' |prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-        {% endif %}
+      <div style="float:right" class="row">
+        <span>By&nbsp;<strong>{{post.author}}</strong>&nbsp;</span>
+        <span>on&nbsp;<strong>{{ post.date | date_to_string }}</strong></span>
+      </div>
+      <hr>
       {% endfor %}
-
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: '/blog' |prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-      {% else %}
-        <span>Next &raquo;</span>
-      {% endif %}
     </div>
-    {% endif %}
-  
+    <!-- Blog Sidebar Widgets Column -->
+    <div class="col-md-4">
+
+      <!-- Blog Search Well -->
+      <div class="well">
+        <h4>Blog Search</h4>
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+        <!-- /.input-group -->
+      </div>
+
+      <!-- Blog Categories Well -->
+      <div class="well">
+        <h4>Blog Labels</h4>
+        <div class="row">
+          <div class="col-md-12">
+            {% assign tags = site.tags | sort %}
+            {% for tag in tags %}
+             <span class="site-tag">
+                <a href="#"
+                    style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+                        {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+                </a>
+            </span>
+            {% endfor %}
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+
+      <!-- Side Widget Well -->
+      <div class="well hide" >
+        <h4>Side Widget Well</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+      </div>
+    </div>
+  </div>
+  {% if paginator.total_pages > 1 %}
+  <div class="row text-center">
+    <div class="col-md-8">
+      <ul class="pagination">
+        {% if paginator.previous_page %}
+        <li><a href="{{ paginator.previous_page_path | prepend: '/blog' |prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
+        {% else %}
+        <li><span>&laquo; Prev</span></li>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+        <li>
+          {% if page == paginator.page %}
+          <a href=""><em>{{ page }}</em></a>
+          {% elsif page == 1 %}
+          <a href="{{ paginator.previous_page_path | prepend: '/blog' |prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+          {% else %}
+          <a href="{{ site.paginate_path | prepend: '/blog' |prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path | prepend: '/blog' |prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+        {% else %}
+        <li><span>Next &raquo;</span></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+  {% endif %}
 </div>

@@ -34,6 +34,8 @@ gem 'jekyll-paginate'
 # Classifier is a general module to allow Bayesian and other types of classifications.
 # Classifier Reborn is a fork of cardmagic/classifier under more active development.
 gem 'classifier-reborn'
+# For searching inside blog
+# gem 'indextank'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 # Use ActiveModel has_secure_password
