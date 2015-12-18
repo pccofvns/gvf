@@ -19,6 +19,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+# Authentication library
+gem 'devise', '3.5.2'
+# delayed mail sending
+gem 'delayed_job_active_record'
+# authorization to restrict access
+gem "pundit"
 # To make the password digest, has_secure_password uses a state-of- the-art hash function called bcrypt
 gem 'bcrypt', '3.1.7'
 # for pagination of any collection of entities
