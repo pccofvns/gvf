@@ -1,9 +1,5 @@
 language: ruby
 rvm:
-  - 2.2.3
- env:
-  - DB=sqlite3
-  - DB=postgresql
-  - RAILS_ENV=test 
+  -2.2.3
 before_script: "bundle exec rake db:drop db:create db:migrate"
 script: "bundle exec rake --trace db:migrate test"
