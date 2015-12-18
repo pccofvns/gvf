@@ -25,6 +25,14 @@ gem 'devise', '3.5.2'
 gem 'delayed_job_active_record'
 # authorization to restrict access
 gem "pundit"
+# omniauth
+gem 'omniauth'
+# omniauth facebook login
+gem 'omniauth-facebook'
+# omniauth facebook login
+gem 'omniauth-twitter'
+# omniauth google login
+gem 'omniauth-google-oauth2'
 # To make the password digest, has_secure_password uses a state-of- the-art hash function called bcrypt
 gem 'bcrypt', '3.1.7'
 # for pagination of any collection of entities

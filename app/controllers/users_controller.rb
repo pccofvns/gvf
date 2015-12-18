@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!, only: [:edit, :update, :index]
   before_action :correct_user, only: [:edit, :update]
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show, :edit, :update, :destroy, :finish_signup]
   # GET /users
   # GET /users.json
   def index
@@ -61,6 +61,22 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  # GET/PATCH /users/:id/finish_signup
+  def finish_signup
+    # authorize! :update, @user 
+    if request.patch? && params[:user] #&& params[:user][:email]
+      byebug
+      if @user.update(user_params)
+        byebug
+        @user.skip_reconfirmation!
+        sign_in(@user, :bypass => true)
+        redirect_to @user, notice: 'Your profile was successfully updated.'
+      else
+        @show_errors = true
+      end
     end
   end
 
