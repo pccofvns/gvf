@@ -1,8 +1,8 @@
 {
-  "name": "Heroku Rails sample app",
-  "description": "A barebones Rails app, which can easily be deployed to Heroku",
+  "name": "Global Village Foundation",
+  "description": "Webapp for Global Village Foundation",
   "image": "heroku/ruby",
-  "repository": "https://github.com/heroku/ruby-getting-started",
+  "repository": "https://github.com/gvfindia/gvf.git",
   "keywords": ["ruby", "rails" ],
   "addons": [ "heroku-postgresql" ]
 }

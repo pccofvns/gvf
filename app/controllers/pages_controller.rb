@@ -12,12 +12,6 @@ class PagesController < ApplicationController
   def blog
   end
 
-  def blogg
-  end
-
-  def events
-  end
-
   def privacy
   end
 
