@@ -14,7 +14,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js' %>
   <%= csrf_meta_tags %>
- ￼<%= render 'layouts/shim'%>
+ ?<%= render 'layouts/shim'%>
 </head>
 <body>
   <%= render 'layouts/header' %> 
@@ -25,8 +25,8 @@
       </div> 
     <% end %>
     <%= yield %>
-    <%= render 'layouts/footer' %>
-    <%= debug(params) if Rails.env.development? %>
   </div>
+  <%= render 'layouts/footer' %>
+  <%= debug(params) if Rails.env.development? %>
 </body>
 </html>
