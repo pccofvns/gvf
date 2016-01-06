@@ -49,28 +49,11 @@ p {
   margin-top: 45px;
   @include box_sizing;
 }
-
-.jumbotron {
-  background: url('https://c2.staticflickr.com/6/5499/9488406593_85006df263_b.jpg') no-repeat center center !important;
-  color: white;
-  padding-bottom: 80px;
-  p {
-    color: lighten($brand-primary, 50%);
-  }
-  .gvf-logo {
-    float: left;
-    margin-right: 10px;
-    font-size: 1.7em;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    padding-top: 9px;
-    font-weight: bold;
-    &:hover {
-      color: #fff;
-      text-decoration: none;
-    }
-  }
+div#slideShowImages img{
+  max-width:100%;
+  max-height:90%;
+  position:fixed;
+  margin-top: 0px;
 }
 
 .alert-alert {
