@@ -1,13 +1,56 @@
 <% provide(:title, "Home") %>
-<div class="row">
-  <div id="slideShowImages" clss="col-md-12">
-    <img src="<%= asset_path('slide1.jpg') %>" alt="Slide 1">
-    <img src="<%= asset_path('slide2.jpg') %>" alt="Slide 2">
-    <img src="<%= asset_path('slide3.jpg') %>" alt="Slide 3">
-    <img src="<%= asset_path('slide4.jpg') %>" alt="Slide 4">
-    <img src="<%= asset_path('slide5.jpg') %>" alt="Slide 5">
-    <img src="<%= asset_path('slide6.jpg') %>" alt="Slide 6">
-    <img src="<%= asset_path('slide7.jpg') %>" alt="Slide 7">
+<div class="container" style="margin-top: 20px;">
+  <div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+    <div class="slides" data-group="slides">
+      <ul>
+        <li>
+            <div class="slide-body" data-group="slide">
+              <img src="<%= asset_path('slide1.jpg') %>">
+            </div>
+        </li>
+        <li>
+            <div class="slide-body" data-group="slide">
+              <img src="<%= asset_path('slide2.jpg') %>">
+            </div>
+        </li>
+        <li>
+            <div class="slide-body" data-group="slide">
+              <img src="<%= asset_path('slide3.jpg') %>">
+            </div>
+        </li>
+        <li>
+            <div class="slide-body" data-group="slide">
+              <img src="<%= asset_path('slide4.jpg') %>">
+            </div>
+        </li>
+        <li>
+            <div class="slide-body" data-group="slide">
+              <img src="<%= asset_path('slide5.jpg') %>">
+            </div>
+        </li>
+        <li>
+            <div class="slide-body" data-group="slide">
+              <img src="<%= asset_path('slide6.jpg') %>">
+            </div>
+        </li>
+        <li>
+            <div class="slide-body" data-group="slide">
+              <img src="<%= asset_path('slide7.jpg') %>">
+            </div>
+        </li>
+      </ul>  
+    </div>  
+    <a class="slider-control left" href="#" data-jump="prev"><b><</b></a>
+    <a class="slider-control right" href="#" data-jump="next"><b>></b></a>
+    <div class="pages">
+      <a class="page" href="#" data-jump-to="1">1</a>
+      <a class="page active" href="#" data-jump-to="2">2</a>
+      <a class="page" href="#" data-jump-to="3">3</a>
+      <a class="page" href="#" data-jump-to="4">4</a>
+      <a class="page" href="#" data-jump-to="5">5</a>
+      <a class="page" href="#" data-jump-to="6">6</a>
+      <a class="page" href="#" data-jump-to="7">7</a>
+    </div>
   </div>
 </div>
 <div class="container">
@@ -20,22 +63,13 @@
     <article class="container service-entry">
       <div class="service-title">
         <h1 class="h4">
-          <a href="/delivery" class="service-title link-alt">Delivery</a>
+          <a href="/about" class="service-title link-alt">Introduction</a>
         </h1>
       </div>
       <div class="service-snippet">
         <p>Global Village Foundation is a think-tank primarily working on economic policies. It works in close coordination with Governments. At present it is focusing on economic policies of states and proposes policy interventions for achieving sustained and balanced growth. It also works on issues of international trade and economics.Global Village Foundation occupies a unique position since it works in close coordination with various Governments and their officials. It brings together experts in various fields and participates in the implementation process to achieve visible, effective and durable outcomes. Global Village Foundation engages in its fields of operation in three capacities. First, it formulates policies. These policies are formulated by groups of experts working in different fields. Second, the policies are conveyed to the government officials and the Global Village Foundation involves itself in the implementation process. Third is critical analysis of policies proposed and implemented. The third process is undertaken as an independent process to assess the impact and effectiveness of policies. The Global Village Foundation also works in close coordination with think tanks working on specific issues, NGOs working in different social and economic sectors and research and educational institutions established and run by governments.</p>
       </div>
       
-      <div class="service-title">
-        <h1 class="h4">
-          <a href="/consulting" class="service-title link-alt">Consulting</a>
-        </h1>
-      </div>
-      <div class="service-snippet">
-        <p>Our consulting team works alongside other federal agencies as partners. We’re here to roll up our sleeves right alongside you and solve the biggest challenges facing your agency. From developing agile acquisition strategies to evaluating opportunities to improving your digital initiatives, our team sets you up for success.</p>
-        <p>Learn more about the ways we can help you at <a href='/consulting/'>GVF Consulting</a>.</p>
-      </div>    
     </article>  
   </section>
   <hr>

@@ -11,15 +11,15 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="<%= active_class(root_path) %>">
+          <li class="<%= active_class(root_path) %>" data-no-turbolink>
             <a href="/"><i class="fa fa-home"></i>&nbsp;</span> Home</a>
           </li>
-          <li class="<%= active_class(work_path) %>"><%= link_to "Work", work_path %></li>
-          <li class="<%= active_class(people_path) %>"><%= link_to "People", people_path%></li>
-          <li class="<%= active_class(blog_path) %>"><%= link_to "Blog", blog_path%></li>
-          <li class="<%= active_class(news_events_path) %>"><%= link_to "News & Events", news_events_path%></li>
-          <li class="<%= active_class(about_path) %>"><%= link_to "About Us", about_path%></li>
-          <li class="<%= active_class(contact_path) %>"><%= link_to "Contact", contact_path%></li>
+          <!--<li class="<%= active_class(work_path) %>" data-no-turbolink><%= link_to "Work", work_path %></li>-->
+          <li class="<%= active_class(people_path) %>" data-no-turbolink><%= link_to "People", people_path%></li>
+          <li class="<%= active_class(blog_path) %>" data-no-turbolink><%= link_to "Blog", blog_path%></li>
+          <li class="<%= active_class(news_events_path) %>" data-no-turbolink><%= link_to "News & Events", news_events_path%></li>
+          <li class="<%= active_class(about_path) %>" data-no-turbolink><%= link_to "About Us", about_path%></li>
+          <li class="<%= active_class(contact_path) %>" data-no-turbolink><%= link_to "Contact", contact_path%></li>
 
         </ul>
         <!--<ul class="nav navbar-nav navbar-right">
