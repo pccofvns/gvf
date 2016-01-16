@@ -73,15 +73,14 @@
     </article>  
   </section>
   <hr>
-  <section class="services">
+  <section>
     <div class="header">
       <div class="container-fluid">
         <h1>Suscribe to our Newsletters</h1>
       </div>
     </div>
-    <article class="container service-entry">
-      <div>
-    		<div style="width:400px;">
+      <div class="row">
+    		<div class="col-md-6" style="width:400px;">
     			<%= form_for(Newsletter.new, remote: true, format: :json, html: {class: :newsletter_form}) do |f| %>
     			<%= f.label :name %>
     			<%= f.text_field :name, class: 'form-control' %>
@@ -89,11 +88,7 @@
     			<%= f.email_field :email, class: 'form-control' %>
     			<%= f.submit "Sign up to subscribe to our newsletter", class: "btn btn-primary" %> 
     			<% end %>
-    			<div>
-    				<p class="small">Your privacy and security are important to us, we'll only share your information as described in <%= link_to "GVF's Privacy and Security Notice", privacy_path(:anchor => "newsletter")%>.</p>
-    			</div>
     		</div>
     	</div>	
-    </article>
   </section>  
 </div>
