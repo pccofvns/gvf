@@ -14,56 +14,7 @@
           <li class="<%= active_class(root_path) %>" data-no-turbolink>
             <a href="/"><i class="fa fa-home"></i>&nbsp;</span> Home</a>
           </li>
-          <!--<li class="<%= active_class(work_path) %>" data-no-turbolink><%= link_to "Work", work_path %></li>-->
-          <li class="<%= active_class(blog_path) %>" data-no-turbolink><%= link_to "Blog", blog_path%></li>
-          <li class="<%= active_class(news_events_path) %>" data-no-turbolink><%= link_to "News & Events", news_events_path%></li>
-          <li class="<%= active_class(teams_path) %>" data-no-turbolink><%= link_to "Teams", '#'%></li>
-          <li class="dropdown <%= active_class(teams_path) %>">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><span class="caret"></span></b></a>
-            <ul class="dropdown-menu">
-              <li data-no-turbolink>
-                <%= link_to skill_path do %>
-                  Skill Development
-                <% end %>
-              </li>
-              <li data-no-turbolink>
-                <%= link_to power_path do %>
-                    Power
-                <% end %>
-              </li>
-              <li data-no-turbolink>
-                <%= link_to fiit_path do %>
-                    Foreign Investment & International Trade
-                <% end %>
-              </li>
-              <li data-no-turbolink>
-                <%= link_to agri_path do %>
-                    Agriculture
-                <% end %>
-              </li>
-              <li data-no-turbolink>
-                <%= link_to animal_path do %>
-                    Animal Husbandry
-                <% end %>
-              </li>
-              <li data-no-turbolink>
-                <%= link_to ruraldev_path do %>
-                    Rural Developemnt
-                <% end %>
-              </li>
-              <li data-no-turbolink>
-                <%= link_to finance_path do %>
-                    Public Finance
-                <% end %>
-              </li>
-              <li data-no-turbolink>
-                <%= link_to edu_path do %>
-                    Education
-                <% end %>
-              </li>
-            </ul>
-          </li>
-          <li class="<%= active_class(about_path) %>" data-no-turbolink><%= link_to "About", about_path%></li>
+           <li class="<%= active_class(about_path) %>" data-no-turbolink><%= link_to "About", about_path%></li>
           <li class="dropdown <%= active_class(about_path) %>">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><span class="caret"></span></b></a>
             <ul class="dropdown-menu">
@@ -77,11 +28,97 @@
                     Governing Council
                 <% end %>
               </li>
+               <li data-no-turbolink>
+                <%= link_to directors_path do %>
+                    Directors
+                <% end %>
+              </li>
               <li class="<%= active_class(about_path) %>" data-no-turbolink><%= link_to "People", people_path%></li>
             </ul>
           </li>
-          <li class="<%= active_class(contact_path) %>" data-no-turbolink><%= link_to "Contact", contact_path%></li>
-
+          
+          <li class="<%= active_class(teams_path) %>" data-no-turbolink><%= link_to "Teams", '#'%></li>
+          <li class="dropdown <%= active_class(teams_path) %>">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><span class="caret"></span></b></a>
+            <ul class="dropdown-menu">
+              <li data-no-turbolink>
+                <%= link_to admin_path do %>
+                    Administration
+                <% end %>
+              </li>
+              <li data-no-turbolink>
+                <%= link_to agri_path do %>
+                    Agriculture, Animal Husbandry & Rural Development
+                <% end %>
+              </li>
+               <li data-no-turbolink>
+                <%= link_to b3p_path do %>
+                    Beti bachao, Beti padhao (Women Empowerment)
+                <% end %>
+              </li>
+              <li data-no-turbolink>
+                <%= link_to edu_path do %>
+                    Education
+                <% end %>
+              </li>
+              <li data-no-turbolink>
+                <%= link_to energy_path do %>
+                    Energy
+                <% end %>
+              </li>
+              <li data-no-turbolink>
+                <%= link_to env_path do %>
+                    Environment
+                <% end %>
+              </li>
+              <li data-no-turbolink>
+                <%= link_to industry_path do %>
+                    Industry
+                <% end %>
+              </li>
+              <li data-no-turbolink>
+                <%= link_to it_path do %>
+                    IT
+                <% end %>
+              </li>
+              <li data-no-turbolink>
+                <%= link_to operations_path do %>
+                    Operations
+                <% end %>
+              </li>
+              <li data-no-turbolink>
+                <%= link_to finance_path do %>
+                    Public Financial Management
+                <% end %>
+              </li>
+              <li data-no-turbolink>
+                <%= link_to skill_path do %>
+                  Skill Development
+                <% end %>
+              </li>
+              <li data-no-turbolink>
+                <%= link_to tourism_path do %>
+                  Tourism
+                <% end %>
+              </li>
+              <li data-no-turbolink>
+                <%= link_to urbdev_path do %>
+                  Urban Development
+                <% end %>
+              </li>      
+            </ul>
+          </li>
+          <li class="<%= active_class(pubs_path) %>" data-no-turbolink><%= link_to "Publications", pubs_path%></li>
+          <li class="<%= active_class(news_events_path) %>" data-no-turbolink><%= link_to "News & Events", news_events_path%></li>
+          <li>
+            <a href="/"><i class="fa fa-facebook circle"></i>&nbsp;</span></a>
+          </li>
+          <li>
+            <a href="/"><i class="fa fa-twitter circle"></i>&nbsp;</span></a>
+          </li>
+          <li>
+            <a href="/"><i class="fa fa-linkedin circle"></i>&nbsp;</span></a>
+          </li>
         </ul>
         <!--<ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
