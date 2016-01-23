@@ -11,49 +11,42 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="<%= active_class(root_path) %>">
+          <li>
             <a href="/"><i class="fa fa-home"></i>&nbsp;</span> Home</a>
           </li>
-          <!--<li><a href="/work">Work</a></li>-->
-          <li><a href="/people">People</a></li>
-          <li class="active"><a href="/blog">Blog</a></li>
-          <li><a href="/news_events">News & Events</a></li>
-          <li class="<%= active_class(teams_path) %>" data-no-turbolink><a href="#">Teams</a></li>
+          <li><a href="/about">About</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><span class="caret"></span></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><b><span class="caret"></span></b></a>
             <ul class="dropdown-menu">
-              <li data-no-turbolink>
-                <a href="/skill">Skill Development</a>
-              </li>
-              <li data-no-turbolink>
-                <a href="/power">Power</a>
-              </li>
-              <li data-no-turbolink>
-                <a href="/fiit">Foreign Investment & International Trade</a>
-              </li>
-              <li data-no-turbolink>
-                <a href="/agri">Agriculture</a>
-              </li>
-              <li data-no-turbolink>
-                <a href="/animal">Animal Husbandry</a>
-              </li>
-              <li data-no-turbolink>
-                <a href="/ruraldev">Rural Development</a>
-              </li>
-              <li data-no-turbolink>
-                <a href="/finance">Finance</a>
-              </li>
-              <li data-no-turbolink>
-                <a href="/edu">Education</a>
-              </li>
+              {% for about_page in site.about_pages %}
+                <li><a href="{{ about_page[1]  }}">{{ about_page[0] }}</a></li>
+              {% endfor %}
             </ul>
           </li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-          {% for page in site.pages_list %}
-            &nbsp;&nbsp;&nbsp;
-            <li><a href="{{ page[1]  }}">{{ page[0] }}</a></li>
-          {% endfor %}
+          
+          <li><a href="#">Teams</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><b><span class="caret"></span></b></a>
+            <ul class="dropdown-menu">
+              {% for team_page in site.team_pages %}
+                <li><a href="{{ team_page[1]  }}">{{ team_page[0] }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li><a href="/pubs">Publications</a></li>
+          <li><a href="/news_events">News & Events</a></li>
+          <li>
+            <a href="/"><i class="fa fa-facebook circle"></i></span></a>
+          </li>
+          <li>
+            <a href="/"><i class="fa fa-twitter circle"></i></span></a>
+          </li>
+          <li>
+            <a href="/"><i class="fa fa-linkedin circle"></i></span></a>
+          </li>
+          <li>
+            <a href="/"><i class="fa fa-google-plus circle"></i></span></a>
+          </li>
         </ul>
       </div>
     </div>

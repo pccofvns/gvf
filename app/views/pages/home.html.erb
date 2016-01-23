@@ -1,57 +1,6 @@
 <% provide(:title, "Home") %>
 <div class="container" style="margin-top: 20px;">
-  <div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
-    <div class="slides" data-group="slides">
-      <ul>
-        <li>
-            <div class="slide-body" data-group="slide">
-              <img src="<%= asset_path('slide1.jpg') %>">
-            </div>
-        </li>
-        <li>
-            <div class="slide-body" data-group="slide">
-              <img src="<%= asset_path('slide2.jpg') %>">
-            </div>
-        </li>
-        <li>
-            <div class="slide-body" data-group="slide">
-              <img src="<%= asset_path('slide3.jpg') %>">
-            </div>
-        </li>
-        <li>
-            <div class="slide-body" data-group="slide">
-              <img src="<%= asset_path('slide4.jpg') %>">
-            </div>
-        </li>
-        <li>
-            <div class="slide-body" data-group="slide">
-              <img src="<%= asset_path('slide5.jpg') %>">
-            </div>
-        </li>
-        <li>
-            <div class="slide-body" data-group="slide">
-              <img src="<%= asset_path('slide6.jpg') %>">
-            </div>
-        </li>
-        <li>
-            <div class="slide-body" data-group="slide">
-              <img src="<%= asset_path('slide7.jpg') %>">
-            </div>
-        </li>
-      </ul>  
-    </div>  
-    <a class="slider-control left" href="#" data-jump="prev"><b><</b></a>
-    <a class="slider-control right" href="#" data-jump="next"><b>></b></a>
-    <div class="pages">
-      <a class="page" href="#" data-jump-to="1">1</a>
-      <a class="page active" href="#" data-jump-to="2">2</a>
-      <a class="page" href="#" data-jump-to="3">3</a>
-      <a class="page" href="#" data-jump-to="4">4</a>
-      <a class="page" href="#" data-jump-to="5">5</a>
-      <a class="page" href="#" data-jump-to="6">6</a>
-      <a class="page" href="#" data-jump-to="7">7</a>
-    </div>
-  </div>
+  <%= render 'layouts/homeCarousel' %>
 </div>
 <div class="container">
   <section class="services">
@@ -74,21 +23,17 @@
   </section>
   <hr>
   <section>
-    <div class="header">
-      <div class="container-fluid">
-        <h1>Suscribe to our Newsletters</h1>
+    <div class="col-md-12">
+      <div class="header">
+        <div class="container-fluid">
+          <h1>GVF in news</h1>
+        </div>
       </div>
     </div>
-      <div class="row">
-    		<div class="col-md-6" style="width:400px;">
-    			<%= form_for(Newsletter.new, remote: true, format: :json, html: {class: :newsletter_form}) do |f| %>
-    			<%= f.label :name %>
-    			<%= f.text_field :name, class: 'form-control' %>
-    			<%= f.label :email %>
-    			<%= f.email_field :email, class: 'form-control' %>
-    			<%= f.submit "Sign up to subscribe to our newsletter", class: "btn btn-primary" %> 
-    			<% end %>
-    		</div>
-    	</div>	
-  </section>  
+    <div class="col-md-12">
+    <%= render 'layouts/newsCarousel' %>
+    </div>
+    
+  </section>
+  <hr>
 </div>

@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Skill Development Landscape In India
-author: Sumit Kumar
+author: Balram Nandwani
 excerpt_separator: "\n\n"
 tags:
 - skill development

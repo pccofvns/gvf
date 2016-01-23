@@ -10,12 +10,31 @@ keep_files: [.git]
 lsi: true
 encoding: UTF-8
 permalink: pretty
-url: gvfindia.org/blog
+url: gvf.co.in/blog
 title: Blog@GVF
 exclude:
   - Rakefile
   - Gemfile
   - .gitignore
-pages_list:       
+blog_pages:       
   Archive: '/blog/archive'
   Feed: '/blog/atom.xml'
+about_pages:       
+  Advisory Body: '/advisorybody'
+  Governing Council: '/governingcouncil'
+  Directors: '/directors'
+  People: '/people'
+team_pages:
+  Administration: '/admin'
+  Agriculture, Animal Husbandry & Rural Development: '/agri'
+  Beti bachao, Beti padhao (Women Empowerment): '/b3p'
+  Education: '/edu'
+  Energy: '/energy'
+  Environment: '/env'
+  Industry: '/industry'
+  IT: '/it'
+  Operations: '/operations'
+  Public Financial Management: '/finance'
+  Skill Development: '/skill'
+  Tourism: '/tourism'
+  Urban Development: '/urbdev'

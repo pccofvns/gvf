@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
 
   root 'pages#home'
+  
   get 'work',   :to => 'pages#work'
   
   get 'teams',   :to => 'pages#teams'
@@ -28,8 +29,8 @@ Rails.application.routes.draw do
 
   get 'blogg',   :to => 'pages#blogg'
   get 'blog',   :to => 'blog'
+
   get 'news_events',   :to => 'news_events#index'
-  get 'privacy',   :to => 'pages#privacy'
 
   get 'about',   :to => 'pages#about'
   get 'advisorybody',   :to => 'pages#advisorybody'
@@ -40,7 +41,9 @@ Rails.application.routes.draw do
   get 'contact',   :to => 'pages#contact'
  
   get 'pubs',   :to => 'pages#pubs'
+
   get 'subscribe'  => 'newsletters#new'
+
   get 'login'   => 'sessions#new'
   post 'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'

@@ -1,0 +1,53 @@
+<div class="well">
+  <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="row">
+          <% @news.each_with_index do |news, index| %>
+            <% if (index < 4) %>
+              <div class="col-sm-3 news-carousel-subitem"><a href="<%=news.detail_url%>"><img src="<%= news.image_url %>" alt="Image" class="img-responsive"></a>
+                <p><%= news.title %></p>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+      <!--/item-->
+      <div class="item">
+        <div class="row">
+          <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+          </div>
+        </div>
+        <!--/row-->
+      </div>
+      <!--/item-->
+      <div class="item">
+        <div class="row">
+          <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+          </div>
+        </div>
+        <!--/row-->
+      </div>
+      <!--/item-->
+    </div>
+    <!--/carousel-inner--> <a class="left carousel-control" href="#newsCarousel" data-slide="prev">‹</a>
+
+    <a class="right carousel-control" href="#newsCarousel" data-slide="next">›</a>
+  </div>
+  <!--/newsCarousel-->
+</div>
+<!--/well-->

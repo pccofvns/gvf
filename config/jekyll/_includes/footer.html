@@ -1,0 +1,33 @@
+<!-- The content of your page would go here. -->
+<footer class="footer-distributed">
+	<div class="row">
+		<div>
+			<div class="row">
+				<div class="col-md-4">
+					<p><center>Global Village Foundation &copy; 2016</center></p>
+				</div>
+				<div class="col-md-4">
+					<ul>
+						<li>
+							<a href="/blog">Blog</a>
+						</li>
+						<li>
+							<a href="/contact">Contact</a>
+						</li>
+						{% for page in site.blog_pages %}
+			              <li><a href="{{ page[1]  }}">{{ page[0] }}</a></li>
+			            {% endfor %}
+					</ul>
+				</div>
+				<div class="col-md-4">
+				<br>
+					<strong>Address:</strong><br>
+					K-13, Lajpat Nagar - II<br>
+					Delhi - 110034<br>
+					Tel no: 011-43735356, 57
+					<br><br>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
