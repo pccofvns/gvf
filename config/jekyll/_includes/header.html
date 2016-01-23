@@ -24,9 +24,8 @@
             </ul>
           </li>
           
-          <li><a href="#">Teams</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><b><span class="caret"></span></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Teams&nbsp;<b><span class="caret"></span></b></a>
             <ul class="dropdown-menu">
               {% for team_page in site.team_pages %}
                 <li><a href="{{ team_page[1]  }}">{{ team_page[0] }}</a></li>

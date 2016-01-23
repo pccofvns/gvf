@@ -5,4 +5,5 @@ $(document).ready(function() {
   $('#homeCarousel').carousel({
     interval: 10000
   });
+  $('.dropdown-toggle').dropdown();
 });
