@@ -1,0 +1,7 @@
+<% @list.each_with_index do |person, index| %>
+	<div class="col-md-4 col-lg-4 text-center">
+	    <img src="<%= asset_path('200x200.png') %>" class="img-circle img-responsive img-center center-block">
+	    <h3><%= person[:name] %></h3>
+	        <small><%= person[:position] %></small>
+	</div>
+<% end %>
