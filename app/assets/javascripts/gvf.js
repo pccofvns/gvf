@@ -6,4 +6,5 @@ $(document).ready(function() {
     interval: 10000
   });
   $('.dropdown-toggle').dropdown();
+
 });

@@ -1,31 +1,35 @@
-  <% provide(:title, "News and Events") %>
-  <h1>News & Events</h1>
-  <p id="notice"><%= notice %></p>
-  <% @news_events.each do |news_event| %>
-  <div class="row">  
-    <div class="col-lg-2">
-      <div class="date">
-        <i class="fa fa-clock-o fa-fw"></i></i>&nbsp;<%= news_event.on %></i>
-      </div> <!-- .date -->
-      <div>
-        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world"
-          data-size="large">
-        Tweet</a>
-      </div>
+<% provide(:title, "News and Events") %>
+<div id="fb-root"></div>
+<h1>News & Events</h1>
+<p id="notice"><%= notice %></p>
+<% @news_events.each_with_index do |news_event, index| %>
+<div class="row">  
+    <meta property="og:url"                content="<%=news_event.detail_url%>" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="<%= news_event.title %>" />
+    <meta property="og:image"              content="<%= news_event.image_url %>" />
+  <div class="col-lg-2">
+    <div class="date">
+      <i class="fa fa-clock-o fa-fw"></i></i>&nbsp;<%= news_event.on %></i>
+    </div> <!-- .date -->
+    <div>
+      <div><a href="<%=news_event.detail_url%>" class="twitter-share-button"{count} data-text="<%= news_event.title %>" data-via="pccofvns" data-hashtags="gvf">Tweet</a></div>
+      <div class="fb-share-button" data-href="<%=news_event.detail_url%>" data-layout="button"></div>
+    </div>
+  </div> 
+  <div class="col-lg-6 entry"> 
+    <div class="title">
+      <h2><a href="<%=news_event.detail_url%>"><%= news_event.title %></a></h2>
+    </div> <!-- .title -->
+    <div class="POST">
+      <%=markdown news_event.description %>
     </div> 
-    <div class="col-lg-6 entry"> 
-      <div class="title">
-        <h2><a href="<%=news_event.detail_url%>"><%= news_event.title %></a></h2>
-      </div> <!-- .title -->
-      <div class="POST">
-        <%=markdown news_event.description %>
-      </div> 
-    </div> <!-- .entry -->
-    <div class="col-lg-4">
-      <a href="<%= news_event.image_url %>" target="_blank" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'shopify']);"><img src="<%= news_event.image_url %>" alt="<%= news_event.title %>"></a>
-    </div> <!-- .span3 -->
-  </div> <!-- .row  -->
-  <% end %>
-  <hr>
-  <%= paginate @news_events %>
-  <%= link_to 'New News event', new_news_event_path %>
+  </div> <!-- .entry -->
+  <div class="col-lg-4">
+    <a href="<%= news_event.image_url %>" target="_blank"><img src="<%= news_event.image_url %>" alt="<%= news_event.title %>"></a>
+  </div> <!-- .span3 -->
+</div> <!-- .row  -->
+<% end %>
+<hr>
+<%= paginate @news_events %>
+<%= link_to 'New News event', new_news_event_path %>
