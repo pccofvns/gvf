@@ -1,3 +1,42 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+section.partners {
+  padding: 4rem 0;
+  background: #f1f5f5; }
+  section.partners .logos {
+    max-width: 108.8rem;
+    margin-left: auto;
+    margin-right: auto; }
+    section.partners .logos::after {
+      clear: both;
+      content: "";
+      display: table; }
+    section.partners .logos img {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      padding: 1.5rem 2.9rem;
+      opacity: 0.7; }
+      section.partners .logos img:last-child {
+        margin-right: 0; }
+      section.partners .logos img:nth-child(4n) {
+        margin-right: 0; }
+      section.partners .logos img:nth-child(4n+1) {
+        clear: left; }
+      @media screen and (max-width: 45rem) {
+        section.partners .logos img {
+          float: left;
+          display: block;
+          margin-right: 7.42297%;
+          width: 46.28851%;
+          padding: 2rem 4rem; }
+          section.partners .logos img:last-child {
+            margin-right: 0; }
+          section.partners .logos img:nth-child(2n) {
+            margin-right: 0; }
+          section.partners .logos img:nth-child(2n+1) {
+            clear: left; } }
+  section.partners hr {
+    width: 94%;
+    margin: 3rem auto;
+    border-color: #dce0e0; 
+  }
