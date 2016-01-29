@@ -7,24 +7,25 @@
       <div class="date">
         <i class="fa fa-clock-o fa-fw"></i></i>&nbsp;<%= news_event.on %></i>
       </div> <!-- .date -->
-      <div class="tweet share-link clearfix">
-        <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.ab4ec33f73214445796a87ce54aee452.en.html#_=1450122261313&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fnews.bootswatch.com%2F&amp;size=m&amp;text=Changes%20to%20Bootswatch%20API&amp;type=share&amp;url=http%3A%2F%2Fnews.bootswatch.com%2Fpost%2F131219814698%2Fchanges-to-bootswatch-api&amp;via=bootswatch" style="position: static; visibility: visible; width: 61px; height: 20px;" data-url="<%=news_event.detail_url%>"></iframe>
-     </div>
-   </div> 
-   <div class="col-lg-6 entry"> 
-    <div class="title">
-      <h2><a href="<%=news_event.detail_url%>"><%= news_event.title %></a></h2>
-    </div> <!-- .title -->
-    <div class="POST">
-      <%=markdown news_event.description %>
+      <div>
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world"
+          data-size="large">
+        Tweet</a>
+      </div>
     </div> 
-  </div> <!-- .entry -->
-  <div class="col-lg-4">
-    <a href="<%= news_event.image_url %>" target="_blank" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'shopify']);"><img src="<%= news_event.image_url %>" alt="<%= news_event.title %>"></a>
-  </div> <!-- .span3 -->
-</div> <!-- .row  -->
-<% end %>
-<hr>
-<%= paginate @news_events %>
-
-<%= link_to 'New News event', new_news_event_path %>
+    <div class="col-lg-6 entry"> 
+      <div class="title">
+        <h2><a href="<%=news_event.detail_url%>"><%= news_event.title %></a></h2>
+      </div> <!-- .title -->
+      <div class="POST">
+        <%=markdown news_event.description %>
+      </div> 
+    </div> <!-- .entry -->
+    <div class="col-lg-4">
+      <a href="<%= news_event.image_url %>" target="_blank" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'shopify']);"><img src="<%= news_event.image_url %>" alt="<%= news_event.title %>"></a>
+    </div> <!-- .span3 -->
+  </div> <!-- .row  -->
+  <% end %>
+  <hr>
+  <%= paginate @news_events %>
+  <%= link_to 'New News event', new_news_event_path %>
