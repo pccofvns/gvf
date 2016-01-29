@@ -52,12 +52,6 @@ p {
   margin-top: 45px;
   @include box_sizing;
 }
-div#slideShowImages img{
-  max-width:100%;
-  max-height:90%;
-  position:relative;
-  margin-top: 0px;
-}
 
 .alert-alert {
   @extend .alert-warning;
@@ -157,31 +151,6 @@ input {
   span {
     margin-left: 20px;
     font-weight: normal;
-  }
-}
-
-.carousel-control {
-  padding-top:10%;
-  width:5%;
-}
-
-#session_remember_me {
-  width: auto;
-  margin-left: 0;
-}
-
-#error_explanation {
-  color: red;
-  ul {
-    color: red;
-    margin: 0 0 30px 0;
-  }
-}
-
-.field_with_errors {
-  @extend .has-error;
-  .form-control {
-    color: $state-danger-text;
   }
 }
 
