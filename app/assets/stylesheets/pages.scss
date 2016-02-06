@@ -45,3 +45,34 @@ section.partners {
     margin: 3rem auto;
     border-color: #dce0e0; 
   }
+  #newsCarousel .carousel-caption {
+  left:0;
+  right:0;
+  bottom:0;
+  text-align:left;
+  padding:10px;
+  background:rgba(0,0,0,0.6);
+  text-shadow:none;
+}
+
+#newsCarousel .list-group {
+  position:absolute;
+  top:0;
+  right:0;
+}
+#newsCarousel .list-group-item {
+  border-radius:0px;
+  cursor:pointer;
+}
+#newsCarousel .list-group .active {
+  background-color:#eee;  
+}
+
+@media (min-width: 992px) { 
+  #newsCarousel {padding-right:33.3333%;}
+  #newsCarousel .carousel-controls {display:none;}  
+}
+@media (max-width: 991px) { 
+  .carousel-caption p,
+  #newsCarousel .list-group {display:none;} 
+}
