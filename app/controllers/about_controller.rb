@@ -1,34 +1,52 @@
 class AboutController < ApplicationController
 
   def people
-  	@list = [
-  				{"name":"Alok Gupta", "position":"Manager- Agriculture and Rural Development","team": "Agriculture", "contact":{"mobile":"9811210081", "email":"Surabhi3s@yahoo.in"}},
-  				{"name":"Amit soni", "position":"Head- Research", "team":"Education", "contact":{"mobile":"9871266497", "email":"Amitsoni.du@gmail.com"}},
-  				{"name":"Aniruddha Rajput", "position":"Trustee - GVF Mentor, Advisor & Guru", "team":"Administration","contact":{"mobile":"9810704531", "email":"adrajput@gmail.com"}},
-  				{"name":"Anupam Pathak", "position":"Coordinator- Academic Research", "team":"Education", "contact":{"mobile":"9999654356", "email":"Pathakanupam24@gmail.com"}},
-  				{"name":"Balram Nandwani", "position":"Trustee - GVF Chief- Power Sector","team":"Energy", "contact":{"mobile":"9812041700", "email":"Balram.nandwani@gmail.com"}},
-  				{"name":"BK Kuthiala", "position":"Advisor- Education", "team":"Education", "contact":{"mobile":"", "email":"kuthialabk@gmail.com"}},
-  				{"name":"Bharat Goel", "position":"Administrative In charge- Administration", "team":"Administration, Environment", "contact":{"mobile":"8826911832", "email":"Goelbharat89@gmail.com"}},
-  				{"name":"Bhupinder Singh", "position":"Trustee GVF Advisory Body", "team":"Administration", "contact":{"mobile":"8198053700", "email":"Bhupi620@gmail.com"}},
-				{"name":"Malini Nagulapalli", "position":"Coordinator- Research & Publications", "team":"Public Health", "contact":{"mobile":"9899998963", "email":"Malini.nagulapalli@gmail.com"}},
-				{"name":"Mohit Srivastava", "position":"Coordinator- Academic Research", "team":"Education", "contact":{"mobile":"9555946565", "email":""}},
-				{"name":"Mukul Asher", "position":"Director- Public Policy", "team":"Administration", "contact":{"mobile":"8888888888", "email":"Mukul.asher@gmail.com"}},
-				{"name":"Narmadeshwar Ji", "position":"Head- Legislative Reforms, Planning", "team":"Administration", "contact":{"mobile":"9313360354", "email":""}},
-				{"name":"Naveen Suneja", "position":"Co-Head-Public Health Matters", "team":"Public Health", "contact":{"mobile":"9812034925", "email":""}},
-				{"name":"Parveen Mittal", "position":"Trustee -GVF, Chief – Urban Local Bodies", "team":"Urban Development", "contact":{"mobile":"9310044360", "email":"Pmittal134@gmail.com"}},
-				{"name":"Pradip Bhandari", "position":"Administrator- PSU Reforms", "team":"Administration", "contact":{"mobile":"9008419232", "email":"Pradipb91@gmail.com"}},
-				{"name":"Raj Nehru", "position":"Senior Manager-Industry and Skill Development", "team":"Skill Development", "contact":{"mobile":"9560193003", "email":"Rajnehru33@gmail.com"}},
-				{"name":"Rishabh Gupta", "position":"Trustee-GVF Administrator-MSME", "team":"Industry", "contact":{"mobile":"9896674743", "email":""}},
-				{"name":"Sumit Kumar", "position":"Chief- Public Relations", "team":"Operations", "contact":{"mobile":"8802792362", "email":"Parkash.sumit@gmail.com"}},
-				{"name":"Suresh chand Mittal", "position":"Pioneer In Chief and Mentor", "team":"Administration", "contact":{"mobile":"8750047562", "email":"Pmittal134@gmail.com"}},
-				{"name":"Tilak Chandna", "position":"Head – Public Finance Budget", "team":"Public Finance", "contact":{"mobile":"9810848542", "email":"Tilak_chandna2003@yahoo.com"}},
-				{"name":"Vijay Vats", "position":"Trustee -GVF, Administrator- Nomadic Tribes", "team":"Environment", "contact":{"mobile":"9416160185", "email":"vijayvatschd@gmail.com"}},
-				{"name":"Vijender Ji", "position":"Administrator- Co-Ops", "team":"Operations", "contact":{"mobile":"8750308559", "email":"vijendergvf@gmail.com"}},
-				{"name":"Vikas Kapoor", "position":"Trustee - GVF, Administrator - Industry", "team":"Industry", "contact":{"mobile":"9818098600", "email":"Kapoorvikas76@gmail.com"}},
-				{"name":"Yogender Malik", "position":"Advisor- Public Health", "team":"Public health", "contact":{"mobile":"9996777559", "email":"Dryogendermalik@gmail.com"}}
-				
-				
-			]
+  	@governingCouncil = [
+  		{"id":"1","name":"Balram Nandwani", "position":"Chairman, GVF","team":"Energy", "contact":{"email":"balram.nandwani@gmail.com"}},
+  		{"id":"2","name":"Aniruddha Rajput", "position":"Member, Governing Council", "team":"Administration","contact":{"email":"adrajput@gmail.com"}},
+  		{"id":"3","name":"Raj Nehru", "position":"Member, Governing Council; Co-ordinator, Skill Development", "team":"Skill Development", "contact":{"email":"rajnehru33@gmail.com"}},
+  		{"id":"4","name":"Sumit Kumar", "position":"Member, Governing Council; Coordinator, Energy Sector Reforms", "team":"Operations", "contact":{"email":"parkash.sumit@gmail.com"}},
+  		{"id":"5","name":"Tilak Chandna", "position":"Member, Governing Council", "team":"Public Finance", "contact":{"email":"tilak_chandna2003@yahoo.com"}},
+  		{"id":"6","name":"Bajrang Lal Bagra", "position":"Invited Member, Governing Council","team":"", "contact":{"email":""}},
+  		{"id":"7","name":"Chandra Wadhwa", "position":"Invited Member, Governing Council", "team":"", "contact":{"email":""}},
+  		{"id":"8","name":"Dr. Omkar Rai", "position":"Invited Member, Governing Council", "team":"", "contact":{"email":""}}
+  	]
+  	@advisors = [
+  		{"id":"9","name":"Prof.(Dr.) BK Kuthiala", "position":"Advisor - Education Reforms", "team":"Education", "contact":{"mobile":"", "email":"kuthialabk@gmail.com"}},
+  		{"id":"10","name":"Dr. Yogender Malik", "position":"Advisor - Public Health, B3P (also Advisor to Haryana CM)", "team":"Public health", "contact":{"email":"dryogendermalik@gmail.com"}}
+  	]
+
+  	@members = [
+		{"id":"11","name":"Alok Gupta", "position":"Coordinator, Agriculture and Rural Development","team": "Agriculture", "contact":{"email":""}},
+		{"id":"12","name":"Asst. Prof. Amit Soni", "position":"Economist, GVF", "team":"", "contact":{"email":"amitsoni.du@gmail.com"}},
+		{"id":"13","name":"Anupam Pathak", "position":"Chief Statistician", "team":"Education", "contact":{"email":"pathakanupam24@gmail.com"}},
+		{"id":"14","name":"Bharat Goel", "position":"Chief Administrative Officer; Coordinator, Environment Protection", "team":"Operations", "contact":{"email":"goelbharat89@gmail.com"}},
+		{"id":"15","name":"Dr. Dayashankar Maurya", "position":"Adjunct Fellow", "team":"Public Health", "contact":{"email":""}},
+		{"id":"16","name":"Lokesh Sharma", "position":"Coordinator, Governance & Capacity Building", "team":"Administration", "contact":{"email":""}},
+		{"id":"17","name":"Dr. Malini Nagulapalli", "position":"Coordinator, Research & Publications; Public Health", "team":"Public Health", "contact":{"email":"malini.nagulapalli@gmail.com"}},
+		{"id":"18","name":"Dr. Mohit Srivastava", "position":"Chief Mathematician", "team":"", "contact":{"email":""}},
+		{"id":"19","name":"Prof.(Dr.) Mukul Asher", "position":"Director, Public Policy", "team":"Administration", "contact":{"email":"mukul.asher@gmail.com"}},
+		{"id":"20","name":"Dr. Naveen Suneja", "position":"Coordinator, Public Health (Haryana)", "team":"Public Health", "contact":{"email":""}},
+		{"id":"21","name":"Praveen Mittal", "position":"Coordinator, Urban Development", "team":"Urban Development", "contact":{"email":"pmittal134@gmail.com"}},
+		{"id":"22","name":"Preeti Bhardwaj", "position":"Coordinator, Women Empowerment", "team":"", "contact":{"email":""}},
+		{"id":"23","name":"Dr. Ramakridhnan", "position":"Adjunct Senior Fellow", "team":"Public Health", "contact":{"email":""}},
+		{"id":"24","name":"Rishabh Gupta", "position":"Coordinator - MSME", "team":"Industry", "contact":{"email":""}},
+		{"id":"25","name":"Rohini Aggarwal", "position":"Coordinator, Public Financial Management", "team":"Public Finance", "contact":{"email":""}},
+		{"id":"26","name":"Sulagna Chattopadhyay", "position":"Coordinator, Legislative Reforms", "team":"", "contact":{"email":""}},
+		{"id":"27","name":"Sumit Shetty", "position":"Coordinator, Startups & Innovations", "team":"", "contact":{"email":""}},
+		{"id":"28","name":"Vijay Vats", "position":"Coordinator, Social Affirmative Action", "team":"", "contact":{"email":"vijayvatschd@gmail.com"}},
+		{"id":"29","name":"Vijender Ji", "position":"Administrator- Co-Ops", "team":"Operations", "contact":{"email":"vijendergvf@gmail.com"}},
+		{"id":"30","name":"Vikas Kapoor", "position":"Coordinator, Heavy Industry", "team":"Industry", "contact":{"email":"kapoorvikas76@gmail.com"}}
+	]
+
+	@researchers = [
+		{"id":"31","name":"Pradip Bhandari", "position":"Associate Reseacher", "team":"", "contact":{"email":"pradipb91@gmail.com"}},
+		{"id":"32","name":"Ragini Suman", "position":"Associate Reseacher", "team":"", "contact":{"email":""}}
+	]
+
+	@interns = [
+		{"id":"33","name":"Anita Vidhi", "position":"Intern", "team":"Skill Development", "contact":{"email":""}}
+	]
   end
 
 end

@@ -139,6 +139,10 @@ input {
   height: auto !important;
 }
 
+.text-nowrap {
+    white-space: nowrap;
+}
+
 .checkbox {
   margin-top: -10px;
   margin-bottom: 10px;

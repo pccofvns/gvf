@@ -11,14 +11,12 @@ Rails.application.routes.draw do
   
   get 'work',   :to => 'pages#work'
   
-  get 'admin',   :to => 'teams#admin'
   get 'agri',   :to => 'teams#agri'
   get 'b3p',   :to => 'teams#b3p'
   get 'edu',   :to => 'teams#edu'
   get 'energy',   :to => 'teams#energy'
   get 'env',   :to => 'teams#env'
   get 'industry',   :to => 'teams#industry'
-  get 'it',   :to => 'teams#it'
   get 'operations',   :to => 'teams#operations'
   get 'finance',   :to => 'teams#finance'
   get 'pubhealth',   :to => 'teams#pubhealth'
