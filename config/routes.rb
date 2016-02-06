@@ -35,7 +35,7 @@ Rails.application.routes.draw do
   get 'people',   :to => 'about#people'
 
   get 'contact',   :to => 'pages#contact'
- 
+  get 'links',   :to => 'pages#links'
   get 'pubs',   :to => 'pages#pubs'
 
   get 'subscribe'  => 'newsletters#new'

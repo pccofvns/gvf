@@ -62,4 +62,11 @@ class AboutController < ApplicationController
   	]
   end
 
+  def advisorybody
+    @advisors = [
+      {"id":"9","name":"Prof.(Dr.) BK Kuthiala", "position":"Advisor - Education Reforms", "team":"Education", "contact":{"mobile":"", "email":"kuthialabk@gmail.com"}},
+      {"id":"10","name":"Dr. Yogender Malik", "position":"Advisor - Public Health, B3P (also Advisor to Haryana CM)", "team":"Public health", "contact":{"email":"dryogendermalik@gmail.com"}}
+    ]
+  end
+
 end
