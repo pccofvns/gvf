@@ -22,7 +22,7 @@ class AboutController < ApplicationController
 		{"id":"13","name":"Anupam Pathak", "position":"Chief Statistician", "team":"Education", "contact":{"email":"pathakanupam24@gmail.com"}},
 		{"id":"14","name":"Bharat Goel", "position":"Chief Administrative Officer; Coordinator, Environment Protection", "team":"Operations", "contact":{"email":"goelbharat89@gmail.com"}},
 		{"id":"15","name":"Dr. Dayashankar Maurya", "position":"Adjunct Fellow", "team":"Public Health", "contact":{"email":""}},
-		{"id":"16","name":"Lokesh Sharma", "position":"Coordinator, Governance & Capacity Building", "team":"Administration", "contact":{"email":""}},
+		{"id":"16","name":"Lokesh Sharma", "position":"Coordinator, Governance & Capacity Building", "team":"Administration", "contact":{"email":"lokeshsharma82@gmail.com"}},
 		{"id":"17","name":"Dr. Malini Nagulapalli", "position":"Coordinator, Research & Publications; Public Health", "team":"Public Health", "contact":{"email":"malini.nagulapalli@gmail.com"}},
 		{"id":"18","name":"Dr. Mohit Srivastava", "position":"Chief Mathematician", "team":"", "contact":{"email":""}},
 		{"id":"19","name":"Prof.(Dr.) Mukul Asher", "position":"Director, Public Policy", "team":"Administration", "contact":{"email":"mukul.asher@gmail.com"}},

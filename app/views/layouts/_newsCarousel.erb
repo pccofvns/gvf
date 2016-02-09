@@ -3,7 +3,7 @@
       <% @news.each_with_index do |news, index| %>
         <% if (index == 0) %>
         <div class="item active">
-           <img src="<%= news.image_url %>" alt="Image" class="img-responsive">
+           <img src="<%= news.image_url %>" alt="Image" class="img-responsive" style="max-height:760px">
            <div class="carousel-caption">
             <h4><a href="<%=news.detail_url%>"><%= news.title %></a></h4>
             <p><%= news.title %></p>
@@ -12,7 +12,7 @@
         <%else%>
           <div class="item">
           <% if news.image_url != nil %>
-            <img src="<%= news.image_url %>" alt="Image" class="img-responsive">
+            <img src="<%= news.image_url %>" alt="Image" class="img-responsive" style="max-height:760px">
           <%else%>
             <img src="http://placehold.it/760x400/cccccc/ffffff">
           <%end%>
