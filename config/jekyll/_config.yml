@@ -22,7 +22,6 @@ blog_pages:
 about_pages:       
   Advisory Body: '/advisorybody'
   Governing Council: '/governingcouncil'
-  Directors: '/directors'
   People: '/people'
 team_pages:
   Agriculture, Animal Husbandry & Rural Development: '/agri'

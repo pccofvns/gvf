@@ -31,7 +31,6 @@ Rails.application.routes.draw do
   get 'about',   :to => 'about#about'
   get 'advisorybody',   :to => 'about#advisorybody'
   get 'governingcouncil',   :to => 'about#governingcouncil'
-  get 'directors',   :to => 'about#directors'
   get 'people',   :to => 'about#people'
 
   get 'contact',   :to => 'pages#contact'
