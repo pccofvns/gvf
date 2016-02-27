@@ -22,10 +22,10 @@ blog_pages:
 about_pages:       
   Advisory Body: '/advisorybody'
   Governing Council: '/governingcouncil'
-  People: '/people'
+  Professionals: '/people'
 team_pages:
   Agriculture, Animal Husbandry & Rural Development: '/agri'
-  Beti bachao, Beti padhao (Women Empowerment): '/b3p'
+  Women Empowerment(Beti bachao, Beti padhao): '/b3p'
   Education: '/edu'
   Energy: '/energy'
   Environment: '/env'

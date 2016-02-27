@@ -28,23 +28,20 @@ class AboutController < ApplicationController
 		{"id":"20","name":"Dr. Naveen Suneja", "position":"Coordinator, Public Health (Haryana)", "team":"Public Health", "contact":{"email":""}},
 		{"id":"21","name":"Praveen Mittal", "position":"Coordinator, Urban Development", "team":"Urban Development", "contact":{"email":"pmittal134@gmail.com"}},
 		{"id":"22","name":"Preeti Bhardwaj", "position":"Coordinator, Women Empowerment", "team":"", "contact":{"email":""}},
-		{"id":"23","name":"Dr. Ramakridhnan", "position":"Adjunct Senior Fellow", "team":"Public Health", "contact":{"email":""}},
+		{"id":"23","name":"Dr. Ramakrishnan", "position":"Adjunct Senior Fellow", "team":"Public Health", "contact":{"email":""}},
 		{"id":"24","name":"Rishabh Gupta", "position":"Coordinator - MSME", "team":"Industry", "contact":{"email":""}},
 		{"id":"25","name":"Rohini Aggarwal", "position":"Coordinator, Public Financial Management", "team":"Public Finance", "contact":{"email":""}},
 		{"id":"26","name":"Sulagna Chattopadhyay", "position":"Coordinator, Legislative Reforms", "team":"", "contact":{"email":""}},
 		{"id":"27","name":"Sumit Shetty", "position":"Coordinator, Startups & Innovations", "team":"", "contact":{"email":""}},
 		{"id":"28","name":"Vijay Vats", "position":"Coordinator, Social Affirmative Action", "team":"", "contact":{"email":"vijayvatschd@gmail.com"}},
-		{"id":"29","name":"Vijender Ji", "position":"Administrator- Co-Ops", "team":"Operations", "contact":{"email":"vijendergvf@gmail.com"}},
 		{"id":"30","name":"Vikas Kapoor", "position":"Coordinator, Heavy Industry", "team":"Industry", "contact":{"email":"kapoorvikas76@gmail.com"}}
 	]
 
 	@researchers = [
-		{"id":"31","name":"Pradip Bhandari", "position":"Associate Reseacher", "team":"", "contact":{"email":"pradipb91@gmail.com"}},
 		{"id":"32","name":"Ragini Suman", "position":"Associate Reseacher", "team":"", "contact":{"email":""}}
 	]
 
 	@interns = [
-		{"id":"33","name":"Anita Vidhi", "position":"Intern", "team":"Skill Development", "contact":{"email":""}}
 	]
   end
 
