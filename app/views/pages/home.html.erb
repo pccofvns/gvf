@@ -1,8 +1,15 @@
 <% provide(:title, "Home") %>
-<div class="container" style="margin-top: 20px;">
-  <%= render 'layouts/homeCarousel' %>
-</div>
 <div class="container">
+   <div class="row">
+    <section>
+     <div class="header">
+        <hr>
+      </div>
+      <div class="col-md-12">
+      <%= render 'layouts/newsCarousel' %>
+      </div>
+    </section>
+  </div>
   <section>
     <div class="header">
       <h1>vision and mission</h1>
@@ -32,17 +39,7 @@
       
     </article>  
   </section>
-  <div class="row">
-    <section>
-     <div class="header">
-        <h1>GVF news</h1>
-        <hr>
-      </div>
-      <div class="col-md-12">
-      <%= render 'layouts/newsCarousel' %>
-      </div>
-    </section>
-  </div>
+ 
   <div class="row">
     <div class="header">
       <div>
