@@ -63,20 +63,20 @@ gem 'classifier-reborn'
 # gem 'debugger', group: [:development, :test]
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
-group :development, :test do
+#group :development, :test do
   gem 'sqlite3',     '1.3.11'
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
-end
-group :test do
+#end
+#group :test do
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace', '0.1.3'
   gem 'guard-minitest', '2.3.1'
-end
-group :production do
+#end
+#group :production do
   # Use postgresql as the database for Active Record
-  gem 'pg', '0.17.1'
+  gem 'pg', '0.18.4'
   gem 'rails_12factor', '0.0.2'
   gem 'puma', '2.15.3'
-end
+#end
