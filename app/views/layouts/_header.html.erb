@@ -116,6 +116,37 @@
             <a href="https://plus.google.com/104832864006345411902"><i class="fa fa-google-plus circle"></i></span></a>
           </li>
         </ul>
+        <!--<ul class="nav navbar-nav navbar-right">
+          <% if user_signed_in? %>
+            <li class="<%= active_class(current_user) %>">
+              <%= link_to current_user do %>
+                <i class="fa fa-user fa-fw"></i>&nbsp;<%=current_user.name%></i>
+              <% end %>
+            </li>
+            <li class="dropdown <%= active_class(people_path) %>">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b><span class="caret"></span></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <%= link_to edit_user_registration_path do %>
+                    <i class="fa fa-cog fa-fw"></i>&nbsp;Settings</i>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to destroy_user_session_path, method: "delete" do %>
+                    <i class="fa fa-sign-out fa-fw"></i>&nbsp;Log out</i>
+                  <% end %>
+                </li>
+              </ul>
+            </li>  
+          <% else %>
+              <li><%= link_to "Register", new_user_registration_path %></li>
+              <li>
+                <%= link_to new_user_session_path do%>
+                  <i class="fa fa-sign-in fa-fw"></i>&nbsp;Log in</i>
+                <%end%>
+              </li>
+          <% end %>
+        </ul>-->
       </div>
     </div>
   </nav>
