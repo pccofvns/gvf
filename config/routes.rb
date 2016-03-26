@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :publications
   resources :news_events
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks', registrations: 'registrations' }
  # The priority is based upon order of creation: first created -> highest priority.
@@ -35,9 +36,10 @@ Rails.application.routes.draw do
 
   get 'contact',   :to => 'pages#contact'
   get 'links',   :to => 'pages#links'
-  get 'pubs',   :to => 'pages#pubs'
 
   get 'subscribe'  => 'newsletters#new'
+
+  get 'pubs',   :to => 'publications#index'
 
   get 'login'   => 'sessions#new'
   post 'login'   => 'sessions#create'

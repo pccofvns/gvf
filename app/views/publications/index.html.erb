@@ -1,0 +1,21 @@
+<% provide(:title, "Publications") %> 
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <h1>Publications</h1>
+
+  <div class="publications">
+    <% @publications.in_groups_of(2, false) do |publicationGroup| %>
+        <div class="<%= cycle('even', 'odd') -%>">
+          <div class="row">
+            <% for publication in publicationGroup %>
+                  <div class="col-md-6">
+                    <a href="<%= publication.url %>" target="_blank"><%= publication.title %></a>
+                    <p><em><%= publication.source %></em>, <%= publication.date.strftime("%d %b %Y") %>
+                    <br>By&nbsp; <%= publication.author.upcase %></p>
+                  </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+  <%= link_to 'New Publication', new_publication_path %>
+</div>

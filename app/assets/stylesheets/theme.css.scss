@@ -24,7 +24,7 @@ body {
   background-color: #fbfbf9;
   font-family: "Lato";
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   color: #000000;
   padding-top: 50px;
 
@@ -198,4 +198,7 @@ input {
 
 .navbar-fixed-top .navbar-brand {
     padding: 10px 10px;
+}
+.publications div.even {
+  background-color: #e2e2e0;
 }
