@@ -93,6 +93,8 @@ $ rails server  ## Starts the server, use this anytime to start server from proj
 
 Your app should now be running on [localhost:3000](http://localhost:3000/).
 
+# Understanding the folder structure of Rails App
+Please go through this basic tutorial "[Ruby On Rails - Directory Structure](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)" for understanding the folder structure of rails app. This would help you to start making changes.
 
 # Deploying to Heroku (Optional)
 
