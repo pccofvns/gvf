@@ -86,9 +86,9 @@ From the location where you want put the source code fire below commands.
 ```sh
 $ git clone git@github.com:gvfindia/gvf.git
 $ cd gvf
-$ bundle install
-$ bundle exec rake db:create db:migrate
-$ rails server
+$ bundle install ## installs all the dependencies, this could take a while and mac users may need to install XCode/Xcode command line tool.
+$ bundle exec rake db:create db:migrate ## creates db and runs patches, db:create required once; db:migrate required when the is schema change
+$ rails server  ## Starts the server, use this anytime to start server from project checkout location.
 ```
 
 Your app should now be running on [localhost:3000](http://localhost:3000/).
